@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-dev-card",
+  "name": "Majed · devCard",
+  "description": "كريمي بشبكة وأشعة، كرت أبيض، breadcrumb، كلمة أكسنت بالرقعة وchips (adapted from majedphotos/video-ad-editor style \"devCard\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#f4efe6",
+    "surface": "#e7e2da",
+    "primary": "#c8643b",
+    "accent": "#c8643b",
+    "text": "#1f1d1a",
+    "mutedText": "#6a6761"
+  },
+  "typography": {
+    "display": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "devCard",
+      "families": [
+        "calm",
+        "editorial"
+      ],
+      "cues": [
+        "tool",
+        "skill",
+        "free",
+        "launch",
+        "fact"
+      ],
+      "blend": [
+        "keynote",
+        "terminal",
+        "studio3D"
+      ],
+      "surface": "devgrid",
+      "card": "white",
+      "label": "chip",
+      "post": {
+        "grain": 0,
+        "vignette": 0.06
+      },
+      "needsCut": true
+    }
+  }
+}

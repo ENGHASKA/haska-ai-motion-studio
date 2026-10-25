@@ -1,0 +1,2558 @@
+{
+  "generatedBy": "scripts/smoke_moves.mjs",
+  "times": [
+    0.5,
+    1.2,
+    2.4
+  ],
+  "total": 100,
+  "summary": {
+    "draws": 97,
+    "rule": 3
+  },
+  "moves": [
+    {
+      "n": 1,
+      "id": "caption",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "caption",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.03194873234165965
+        },
+        {
+          "move": "caption",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.031247076433716905
+        },
+        {
+          "move": "caption",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03933950790532323
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 2,
+      "id": "blurIn",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "blurIn",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.025025727383291233
+        },
+        {
+          "move": "blurIn",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.042567125081859856
+        },
+        {
+          "move": "blurIn",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.030124426981008513
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 3,
+      "id": "riseUp",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "riseUp",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.010478061558611657
+        },
+        {
+          "move": "riseUp",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.03213584058377771
+        },
+        {
+          "move": "riseUp",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03297782767330901
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 4,
+      "id": "wordSwap",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "wordSwap",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.03578445130507999
+        },
+        {
+          "move": "wordSwap",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.03578445130507999
+        },
+        {
+          "move": "wordSwap",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03578445130507999
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 5,
+      "id": "focus",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "focus",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.04022827205538404
+        },
+        {
+          "move": "focus",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.04022827205538404
+        },
+        {
+          "move": "focus",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.04022827205538404
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 6,
+      "id": "decrypt",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "decrypt",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.010665169800729722
+        },
+        {
+          "move": "decrypt",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.02226588081204977
+        },
+        {
+          "move": "decrypt",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.02254654317522687
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 7,
+      "id": "counter",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "counter",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.0036953877818317895
+        },
+        {
+          "move": "counter",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.003835718963420339
+        },
+        {
+          "move": "counter",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.004443820750304051
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 8,
+      "id": "crossZoom",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "crossZoom",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "crossZoom",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "crossZoom",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 9,
+      "id": "softWipe",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "softWipe",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "softWipe",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "softWipe",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 10,
+      "id": "iris",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "iris",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "iris",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "iris",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 11,
+      "id": "whip",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "whip",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "whip",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "whip",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 12,
+      "id": "pushIn",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "pushIn",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "pushIn",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "pushIn",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 13,
+      "id": "pullOut",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "pullOut",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "pullOut",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "pullOut",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 14,
+      "id": "zoomWipe",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "zoomWipe",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "zoomWipe",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "zoomWipe",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 15,
+      "id": "notifs",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "notifs",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.06492656001496866
+        },
+        {
+          "move": "notifs",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.0675928524651511
+        },
+        {
+          "move": "notifs",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.20329310506127796
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 16,
+      "id": "highlight",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "highlight",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.011881373374497147
+        },
+        {
+          "move": "highlight",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.02409018617270091
+        },
+        {
+          "move": "highlight",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.02409018617270091
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 17,
+      "id": "shine",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "shine",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "shine",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "shine",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 18,
+      "id": "jcut",
+      "cat": "rule",
+      "samples": [],
+      "status": "rule"
+    },
+    {
+      "n": 19,
+      "id": "matchCut",
+      "cat": "rule",
+      "samples": [],
+      "status": "rule"
+    },
+    {
+      "n": 20,
+      "id": "ramp",
+      "cat": "rule",
+      "samples": [],
+      "status": "rule"
+    },
+    {
+      "n": 21,
+      "id": "typewriter",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "typewriter",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.003835718963420339
+        },
+        {
+          "move": "typewriter",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.009823182711198428
+        },
+        {
+          "move": "typewriter",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.009823182711198428
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 22,
+      "id": "kashida",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "kashida",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.025399943867527364
+        },
+        {
+          "move": "kashida",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.023622415567405745
+        },
+        {
+          "move": "kashida",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.02338853026475816
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 23,
+      "id": "dotZoom",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "dotZoom",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dotZoom",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dotZoom",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 24,
+      "id": "dipFade",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "dipFade",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dipFade",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dipFade",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 25,
+      "id": "slideOver",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "slideOver",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9981289175788194
+        },
+        {
+          "move": "slideOver",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "slideOver",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 26,
+      "id": "clockWipe",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "clockWipe",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "clockWipe",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "clockWipe",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 27,
+      "id": "slices",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "slices",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "slices",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "slices",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 28,
+      "id": "glitch",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "glitch",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glitch",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glitch",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 29,
+      "id": "flip",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "flip",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.988492843109739
+        },
+        {
+          "move": "flip",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.7519412480119749
+        },
+        {
+          "move": "flip",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 30,
+      "id": "lightLeak",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "lightLeak",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lightLeak",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lightLeak",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 31,
+      "id": "handheld",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "handheld",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "handheld",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "handheld",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 32,
+      "id": "kenBurns",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "kenBurns",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "kenBurns",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "kenBurns",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 33,
+      "id": "snapZoom",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "snapZoom",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "snapZoom",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "snapZoom",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 34,
+      "id": "shake",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "shake",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "shake",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "shake",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 35,
+      "id": "rackFocus",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "rackFocus",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9997193376368229
+        },
+        {
+          "move": "rackFocus",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "rackFocus",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 36,
+      "id": "parallax",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "parallax",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9981289175788194
+        },
+        {
+          "move": "parallax",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.9693610253531668
+        },
+        {
+          "move": "parallax",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.9573393207970811
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 37,
+      "id": "dollyZoom",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "dollyZoom",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dollyZoom",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "dollyZoom",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 38,
+      "id": "scrollReveal",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "scrollReveal",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.034334362428664986
+        },
+        {
+          "move": "scrollReveal",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.032089063523248196
+        },
+        {
+          "move": "scrollReveal",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.029703433436242866
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 39,
+      "id": "wordDrop",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "wordDrop",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.014875105248386191
+        },
+        {
+          "move": "wordDrop",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.02862756104406399
+        },
+        {
+          "move": "wordDrop",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.029750210496772383
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 40,
+      "id": "rubberPop",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "rubberPop",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.02366919262793526
+        },
+        {
+          "move": "rubberPop",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.019693142482926373
+        },
+        {
+          "move": "rubberPop",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.020207690148751054
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 41,
+      "id": "strokeFill",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "strokeFill",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.002713069510711947
+        },
+        {
+          "move": "strokeFill",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.015810646458976518
+        },
+        {
+          "move": "strokeFill",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.02352886144634671
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 42,
+      "id": "versus",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "versus",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.006034240808307606
+        },
+        {
+          "move": "versus",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.03353915239966321
+        },
+        {
+          "move": "versus",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03246328000748433
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 43,
+      "id": "wordPath",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "wordPath",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.021751333146225092
+        },
+        {
+          "move": "wordPath",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.024885396201702686
+        },
+        {
+          "move": "wordPath",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.020909346056693798
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 44,
+      "id": "lowerThird",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "lowerThird",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.0015436429974740387
+        },
+        {
+          "move": "lowerThird",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.01323790812985312
+        },
+        {
+          "move": "lowerThird",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.01323790812985312
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 45,
+      "id": "checklist",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "checklist",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.020956123117223315
+        },
+        {
+          "move": "checklist",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.022499766114697353
+        },
+        {
+          "move": "checklist",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.02469828795958462
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 46,
+      "id": "priceTag",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "priceTag",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.18902610159977548
+        },
+        {
+          "move": "priceTag",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.18907287866030498
+        },
+        {
+          "move": "priceTag",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.18846477687342128
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 47,
+      "id": "ctaPulse",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "ctaPulse",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.06600243240714754
+        },
+        {
+          "move": "ctaPulse",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.06385068762278978
+        },
+        {
+          "move": "ctaPulse",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.07161567967068949
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 48,
+      "id": "compare",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "compare",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9872766395359716
+        },
+        {
+          "move": "compare",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.9872766395359716
+        },
+        {
+          "move": "compare",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.9878379642623257
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 49,
+      "id": "ringStat",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "ringStat",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.04177191505285808
+        },
+        {
+          "move": "ringStat",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.04420432220039293
+        },
+        {
+          "move": "ringStat",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.043642997474038735
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 50,
+      "id": "barChart",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "barChart",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.03054542052577416
+        },
+        {
+          "move": "barChart",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.12260267564786229
+        },
+        {
+          "move": "barChart",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.12386565628215923
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 51,
+      "id": "orbit",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "orbit",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9941060903732809
+        },
+        {
+          "move": "orbit",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.6038450743755263
+        },
+        {
+          "move": "orbit",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.6400505192253719
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 52,
+      "id": "couchWall",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "couchWall",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9924221161942184
+        },
+        {
+          "move": "couchWall",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.5856020207690149
+        },
+        {
+          "move": "couchWall",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.6450088876415007
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 53,
+      "id": "uiWorld",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "uiWorld",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "uiWorld",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "uiWorld",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 54,
+      "id": "frameBreak",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "frameBreak",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9934512115258677
+        },
+        {
+          "move": "frameBreak",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.5089344185611376
+        },
+        {
+          "move": "frameBreak",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.5468238375900458
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 55,
+      "id": "headlineWall",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "headlineWall",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9723547572270559
+        },
+        {
+          "move": "headlineWall",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.21129198241182523
+        },
+        {
+          "move": "headlineWall",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.21311628777247638
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 56,
+      "id": "doodleBoil",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "doodleBoil",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "doodleBoil",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "doodleBoil",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 57,
+      "id": "coverStory",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "coverStory",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "coverStory",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "coverStory",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 58,
+      "id": "glassType",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "glassType",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glassType",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glassType",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 59,
+      "id": "phoneMockup",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "phoneMockup",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9942464215548695
+        },
+        {
+          "move": "phoneMockup",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.5567873514828329
+        },
+        {
+          "move": "phoneMockup",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.5578164468144822
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 60,
+      "id": "greenScreen",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "greenScreen",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "greenScreen",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "greenScreen",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 61,
+      "id": "paperCut",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "paperCut",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.45514079895219384
+        },
+        {
+          "move": "paperCut",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.5063149031714848
+        },
+        {
+          "move": "paperCut",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.5065487884741323
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 62,
+      "id": "ijamDrop",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "ijamDrop",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.010478061558611657
+        },
+        {
+          "move": "ijamDrop",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.011413602769201983
+        },
+        {
+          "move": "ijamDrop",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.011647488071849565
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 63,
+      "id": "qalamWrite",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "qalamWrite",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.0004209935447656469
+        },
+        {
+          "move": "qalamWrite",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.0019178594817101694
+        },
+        {
+          "move": "qalamWrite",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.005660024324071475
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 64,
+      "id": "videoText",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "videoText",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.015062213490504257
+        },
+        {
+          "move": "videoText",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.01501543642997474
+        },
+        {
+          "move": "videoText",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.058143886238188794
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 65,
+      "id": "stickerFreeze",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "stickerFreeze",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "stickerFreeze",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "stickerFreeze",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 66,
+      "id": "joinSnap",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "joinSnap",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.0043034895687155015
+        },
+        {
+          "move": "joinSnap",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.011273271587613435
+        },
+        {
+          "move": "joinSnap",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.007858546168958742
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 67,
+      "id": "kufiGrid",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "kufiGrid",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.02483861914117317
+        },
+        {
+          "move": "kufiGrid",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.026101599775470108
+        },
+        {
+          "move": "kufiGrid",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.026662924501824305
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 68,
+      "id": "beamConnect",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "beamConnect",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.023107867901581064
+        },
+        {
+          "move": "beamConnect",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.09462999345121152
+        },
+        {
+          "move": "beamConnect",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.09818505005145477
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 69,
+      "id": "pageTurnRTL",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "pageTurnRTL",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "pageTurnRTL",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.9553279071943119
+        },
+        {
+          "move": "pageTurnRTL",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 70,
+      "id": "lightRays",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "lightRays",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lightRays",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lightRays",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 71,
+      "id": "tilt3D",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "tilt3D",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9978950322761717
+        },
+        {
+          "move": "tilt3D",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.4724950884086444
+        },
+        {
+          "move": "tilt3D",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.44232388436710635
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 72,
+      "id": "dynamicIsland",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "dynamicIsland",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.00636168023201422
+        },
+        {
+          "move": "dynamicIsland",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.11081485639442418
+        },
+        {
+          "move": "dynamicIsland",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.11142295818130789
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 73,
+      "id": "redact",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "redact",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.021330339601459445
+        },
+        {
+          "move": "redact",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.0206286836935167
+        },
+        {
+          "move": "redact",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03826363551314435
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 74,
+      "id": "ayahCalm",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "ayahCalm",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.5375619796052016
+        },
+        {
+          "move": "ayahCalm",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.726400972962859
+        },
+        {
+          "move": "ayahCalm",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.7286930489288053
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 75,
+      "id": "cloneTrio",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "cloneTrio",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "cloneTrio",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.2490410702591449
+        },
+        {
+          "move": "cloneTrio",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.24946206380391056
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 76,
+      "id": "nuqtaCurtain",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "nuqtaCurtain",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "nuqtaCurtain",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "nuqtaCurtain",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 77,
+      "id": "dotMap",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "dotMap",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.009869959771727945
+        },
+        {
+          "move": "dotMap",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.0678735148283282
+        },
+        {
+          "move": "dotMap",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.07830479932641032
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 78,
+      "id": "rimOutline",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "rimOutline",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9736645149218823
+        },
+        {
+          "move": "rimOutline",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.5431284498082141
+        },
+        {
+          "move": "rimOutline",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.5516886518851155
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 79,
+      "id": "craneUp",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "craneUp",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9936383197679858
+        },
+        {
+          "move": "craneUp",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.6087566657311254
+        },
+        {
+          "move": "craneUp",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.5678267377677987
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 80,
+      "id": "morphWord",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "morphWord",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.004116381326597436
+        },
+        {
+          "move": "morphWord",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.004163158387126953
+        },
+        {
+          "move": "morphWord",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.003835718963420339
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 81,
+      "id": "terminalType",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "terminalType",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.030732528767892224
+        },
+        {
+          "move": "terminalType",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.033164935915427074
+        },
+        {
+          "move": "terminalType",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03812330433155581
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 82,
+      "id": "glassLens",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "glassLens",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glassLens",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "glassLens",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 83,
+      "id": "lineChartDraw",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "lineChartDraw",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.015296098793151839
+        },
+        {
+          "move": "lineChartDraw",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.025727383291233977
+        },
+        {
+          "move": "lineChartDraw",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.05304518664047151
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 84,
+      "id": "girihBloom",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "girihBloom",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "girihBloom",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "girihBloom",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 85,
+      "id": "speechBubble",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "speechBubble",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.006782673776779867
+        },
+        {
+          "move": "speechBubble",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.03643933015249322
+        },
+        {
+          "move": "speechBubble",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.03625222191037515
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 86,
+      "id": "punchCut",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "punchCut",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "punchCut",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "punchCut",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 87,
+      "id": "scanLine",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "scanLine",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "scanLine",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "scanLine",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 88,
+      "id": "postCard",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "postCard",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "postCard",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "postCard",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 89,
+      "id": "bodyFollow",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "bodyFollow",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "bodyFollow",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "bodyFollow",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 90,
+      "id": "echoStack",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "echoStack",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.05140798952193844
+        },
+        {
+          "move": "echoStack",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.060435962204135094
+        },
+        {
+          "move": "echoStack",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.05781644681448218
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 91,
+      "id": "palmHold",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "palmHold",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "palmHold",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "palmHold",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 92,
+      "id": "bentoCut",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "bentoCut",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.8703807652727102
+        },
+        {
+          "move": "bentoCut",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.6214800261951539
+        },
+        {
+          "move": "bentoCut",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 93,
+      "id": "receiptPrint",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "receiptPrint",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.04448498456357002
+        },
+        {
+          "move": "receiptPrint",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.18869866217606884
+        },
+        {
+          "move": "receiptPrint",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.210637103564412
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 94,
+      "id": "searchBar",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "searchBar",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "searchBar",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "searchBar",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 95,
+      "id": "swishSettle",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "swishSettle",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "swishSettle",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "swishSettle",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 96,
+      "id": "warpWave",
+      "cat": "text",
+      "samples": [
+        {
+          "move": "warpWave",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.03068575170736271
+        },
+        {
+          "move": "warpWave",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.03091963701001029
+        },
+        {
+          "move": "warpWave",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.029750210496772383
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 97,
+      "id": "doorway",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "doorway",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "doorway",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "doorway",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 98,
+      "id": "pointerCursor",
+      "cat": "card",
+      "samples": [
+        {
+          "move": "pointerCursor",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 0.9996257835157639
+        },
+        {
+          "move": "pointerCursor",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 0.9996257835157639
+        },
+        {
+          "move": "pointerCursor",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 0.9995790064552343
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 99,
+      "id": "lumaMelt",
+      "cat": "transition",
+      "samples": [
+        {
+          "move": "lumaMelt",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lumaMelt",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "lumaMelt",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    },
+    {
+      "n": 100,
+      "id": "motionEcho",
+      "cat": "camera",
+      "samples": [
+        {
+          "move": "motionEcho",
+          "t": 0.5,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "motionEcho",
+          "t": 1.2,
+          "ok": true,
+          "coverage": 1
+        },
+        {
+          "move": "motionEcho",
+          "t": 2.4,
+          "ok": true,
+          "coverage": 1
+        }
+      ],
+      "status": "draws"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-doodle",
+  "name": "Majed · doodle",
+  "description": "أسهم ودوائر بقلم تنرسم وهي تلحق الكلام، والخط «يغلي» شوي (adapted from majedphotos/video-ad-editor style \"doodle\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#fbfaf6",
+    "surface": "#eeede9",
+    "primary": "#d97757",
+    "accent": "#d97757",
+    "text": "#1b1a17",
+    "mutedText": "#696865"
+  },
+  "typography": {
+    "display": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "playful"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "doodle",
+      "families": [
+        "calm",
+        "editorial"
+      ],
+      "cues": [
+        "emphasis",
+        "explain",
+        "arrow",
+        "tip"
+      ],
+      "blend": [
+        "paperCut",
+        "explainer"
+      ],
+      "surface": "video",
+      "card": "sketch",
+      "label": "circled",
+      "post": {
+        "grain": 0.02,
+        "vignette": 0
+      },
+      "needsCut": false
+    }
+  }
+}

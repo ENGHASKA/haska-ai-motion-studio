@@ -1,0 +1,16 @@
+{
+  "title": "IBM Plex Sans Arabic",
+  "source": {
+    "kind": "third-party",
+    "origin": "https://github.com/google/fonts/tree/main/ofl/ibmplexsansarabic (IBM Corp., Google Fonts repository)",
+    "recordedAt": "2026-10-25T08:40:00Z"
+  },
+  "license": {
+    "id": "OFL-1.1",
+    "name": "SIL Open Font License 1.1",
+    "url": "https://openfontlicense.org",
+    "commercialUse": "yes",
+    "attributionRequired": false
+  },
+  "notes": "Copyright 2017 IBM Corp. with Reserved Font Name \"Plex\". Free for commercial use, including embedding in video. The license text (OFL.txt) must accompany any redistribution of the font files themselves; no on-screen credit is required."
+}

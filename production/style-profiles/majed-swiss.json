@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-swiss",
+  "name": "Majed · swiss",
+  "description": "شبكة صارمة، أحمر وأسود وأبيض، أشرطة وأرقام ضخمة، بلا زخرفة (adapted from majedphotos/video-ad-editor style \"swiss\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#ffffff",
+    "surface": "#f1f1f1",
+    "primary": "#e30613",
+    "accent": "#e30613",
+    "text": "#111111",
+    "mutedText": "#646464"
+  },
+  "typography": {
+    "display": {
+      "family": "Noto Kufi Arabic",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Noto Kufi Arabic",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "swiss",
+      "families": [
+        "punch",
+        "editorial"
+      ],
+      "cues": [
+        "number",
+        "list",
+        "steps",
+        "data"
+      ],
+      "blend": [
+        "editorial",
+        "brutal"
+      ],
+      "surface": "grid",
+      "card": "block",
+      "label": "bar",
+      "post": {
+        "grain": 0,
+        "vignette": 0
+      },
+      "needsCut": true
+    }
+  }
+}

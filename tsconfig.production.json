@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "rewriteRelativeImportExtensions": true,
+    "outDir": ".cache/production-build",
+    "rootDir": ".",
+    "incremental": true,
+    "tsBuildInfoFile": ".cache/production-build/.tsbuildinfo",
+    "types": ["node"]
+  },
+  "include": ["src/production/*.ts", "src/motion/*.ts", "src/typography/*.ts", "src/majed/timeline.ts", "src/majed/montage.ts", "src/majed/cover-rules.ts", "src/audio/types.ts", "scripts/production.ts", "tests"],
+  "exclude": ["src/motion/index.ts"]
+}

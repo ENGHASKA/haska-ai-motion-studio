@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "title": "Signal Defense",
+  "language": "en",
+  "durationMs": 3865,
+  "scenes": [
+    {
+      "id": "scene-01", "startMs": 0, "endMs": 1200,
+      "narration": "Protect every signal.", "onScreenText": "PROTECT EVERY SIGNAL", "visualKind": "signal",
+      "animation": "A central signal branches to verified endpoints while the network draws outward.",
+      "visualAssetRequirements": [],
+      "semanticRationale": "The node topology directly represents signals moving through a protected network.",
+      "status": "reviewed"
+    },
+    {
+      "id": "scene-02", "startMs": 1200, "endMs": 2180,
+      "narration": "Detect the threat.", "onScreenText": "DETECT THE THREAT", "visualKind": "shield",
+      "animation": "The defensive boundary draws on, then the inner confirmation mark resolves decisively.",
+      "visualAssetRequirements": [],
+      "semanticRationale": "An abstract defensive boundary communicates threat detection without inventing software UI.",
+      "status": "reviewed"
+    },
+    {
+      "id": "scene-03", "startMs": 2180, "endMs": 3865,
+      "narration": "Respond with confidence.", "onScreenText": "RESPOND WITH CONFIDENCE", "visualKind": "process",
+      "animation": "Response nodes converge into a stable resolved state; motion settles without overshoot.",
+      "visualAssetRequirements": [],
+      "semanticRationale": "A converging response path depicts coordinated action and a controlled resolution.",
+      "status": "reviewed"
+    }
+  ]
+}

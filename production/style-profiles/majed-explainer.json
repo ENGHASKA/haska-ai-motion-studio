@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-explainer",
+  "name": "Majed · explainer",
+  "description": "ورق ودبابيس وقلم تحديد وخيط أحمر — المعلومة تطلع موثّقة (Vox / جوني هاريس) (adapted from majedphotos/video-ad-editor style \"explainer\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#ede5d3",
+    "surface": "#e0d9c8",
+    "primary": "#ffe14d",
+    "accent": "#c8382b",
+    "text": "#1b1a17",
+    "mutedText": "#646159"
+  },
+  "typography": {
+    "display": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "playful"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "explainer",
+      "families": [
+        "editorial"
+      ],
+      "cues": [
+        "news",
+        "number",
+        "contrast",
+        "map",
+        "source"
+      ],
+      "blend": [
+        "keynote",
+        "paperCut",
+        "archive"
+      ],
+      "surface": "paper",
+      "card": "clipping",
+      "label": "highlight",
+      "post": {
+        "grain": 0.05,
+        "vignette": 0.18
+      },
+      "needsCut": true
+    }
+  }
+}

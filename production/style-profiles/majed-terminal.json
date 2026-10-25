@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-terminal",
+  "name": "Majed · terminal",
+  "description": "نافذة كود داكنة، مؤشر يومض، أوامر تنكتب ونتايج تطلع (adapted from majedphotos/video-ad-editor style \"terminal\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#0d1117",
+    "surface": "#23272d",
+    "primary": "#3fb950",
+    "accent": "#d2a8ff",
+    "text": "#e6edf3",
+    "mutedText": "#9aa0a6"
+  },
+  "typography": {
+    "display": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "corporate"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "terminal",
+      "families": [
+        "punch",
+        "editorial"
+      ],
+      "cues": [
+        "tech",
+        "code",
+        "ai",
+        "tool"
+      ],
+      "blend": [
+        "glassUI",
+        "devCard"
+      ],
+      "surface": "video",
+      "card": "window",
+      "label": "prompt",
+      "post": {
+        "grain": 0,
+        "vignette": 0.15
+      },
+      "needsCut": false
+    }
+  }
+}

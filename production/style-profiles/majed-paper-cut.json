@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-paper-cut",
+  "name": "Majed · paperCut",
+  "description": "كل شي قصاصة ورق بحد أبيض وظل قاسي، وانت نفسك ستيكر — ستوب موشن (adapted from majedphotos/video-ad-editor style \"paperCut\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#e7d7b5",
+    "surface": "#dbccac",
+    "primary": "#e2482b",
+    "accent": "#f2c230",
+    "text": "#1b1a17",
+    "mutedText": "#625c4e"
+  },
+  "typography": {
+    "display": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "energetic"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "paperCut",
+      "families": [
+        "punch",
+        "editorial"
+      ],
+      "cues": [
+        "hit",
+        "list",
+        "fun",
+        "emphasis"
+      ],
+      "blend": [
+        "explainer",
+        "archive",
+        "doodle"
+      ],
+      "surface": "kraft",
+      "card": "torn",
+      "label": "slap",
+      "post": {
+        "grain": 0.04,
+        "vignette": 0.08
+      },
+      "needsCut": true
+    }
+  }
+}

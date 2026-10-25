@@ -1,0 +1,177 @@
+{
+  "graph": {
+    "schemaVersion": 2,
+    "id": "starter",
+    "title": "HASKA Starter",
+    "language": "en",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationFrames": 270,
+    "styleProfileId": "haska-cyber",
+    "version": 1,
+    "createdAt": "2026-10-25T07:43:21.770Z",
+    "updatedAt": "2026-10-25T07:43:21.770Z",
+    "shots": [
+      {
+        "id": "opening",
+        "track": 0,
+        "startFrame": 0,
+        "durationFrames": 90,
+        "description": "Opening title card.",
+        "onScreenText": "HASKA Starter",
+        "engine": "remotion",
+        "assets": [],
+        "approval": "draft",
+        "composition": "title",
+        "engineOptions": {
+          "eyebrow": "Introduction",
+          "subtitle": "One supporting line."
+        }
+      },
+      {
+        "id": "middle",
+        "track": 0,
+        "startFrame": 90,
+        "durationFrames": 90,
+        "description": "Animated network visual carrying the key idea.",
+        "onScreenText": "The key idea",
+        "engine": "remotion",
+        "assets": [],
+        "approval": "draft",
+        "composition": "network",
+        "transitionIn": {
+          "type": "camera-pull",
+          "durationFrames": 15,
+          "easing": "standard"
+        }
+      },
+      {
+        "id": "closing",
+        "track": 0,
+        "startFrame": 180,
+        "durationFrames": 90,
+        "description": "Closing statement.",
+        "onScreenText": "Closing line",
+        "engine": "remotion",
+        "assets": [],
+        "approval": "draft",
+        "composition": "title",
+        "engineOptions": {
+          "layout": "center"
+        },
+        "transitionIn": {
+          "type": "camera-pull",
+          "durationFrames": 15,
+          "easing": "standard"
+        }
+      }
+    ]
+  },
+  "style": {
+    "schemaVersion": 1,
+    "id": "haska-cyber",
+    "name": "HASKA Cyber",
+    "description": "Dark cybersecurity look used by the existing sample scenes: cyan/mint on near-black, restrained glow.",
+    "palette": {
+      "background": "#02060d",
+      "surface": "#082536",
+      "primary": "#53f6ff",
+      "accent": "#00ffc7",
+      "text": "#e9ffff",
+      "mutedText": "#8dbec7"
+    },
+    "typography": {
+      "display": {
+        "family": "IBM Plex Sans Arabic",
+        "fallbacks": [
+          "Arial",
+          "sans-serif"
+        ],
+        "weight": 700,
+        "tracking": -0.02
+      },
+      "body": {
+        "family": "IBM Plex Sans Arabic",
+        "fallbacks": [
+          "Arial",
+          "sans-serif"
+        ],
+        "weight": 400
+      },
+      "mono": {
+        "family": "IBM Plex Sans Arabic",
+        "fallbacks": [
+          "monospace"
+        ],
+        "weight": 500,
+        "tracking": 0.18
+      },
+      "arabic": {
+        "family": "IBM Plex Sans Arabic",
+        "fallbacks": [
+          "Noto Sans Arabic",
+          "FreeSerif",
+          "sans-serif"
+        ],
+        "weight": 700
+      }
+    },
+    "motion": {
+      "personality": "premium",
+      "easings": {
+        "enter": [
+          0.16,
+          1,
+          0.3,
+          1
+        ],
+        "exit": [
+          0.7,
+          0,
+          0.84,
+          0
+        ],
+        "standard": [
+          0.65,
+          0,
+          0.35,
+          1
+        ]
+      },
+      "durationsMs": {
+        "quick": 250,
+        "standard": 600,
+        "slow": 1200
+      },
+      "transitions": {
+        "scene": {
+          "type": "camera-pull",
+          "durationMs": 1500,
+          "easing": "standard"
+        },
+        "section": {
+          "type": "crossfade",
+          "durationMs": 500,
+          "easing": "standard"
+        },
+        "reveal": {
+          "type": "wipe",
+          "durationMs": 800,
+          "easing": "enter"
+        }
+      }
+    },
+    "camera": {
+      "movement": "push",
+      "shake": 0,
+      "depthOfField": false
+    },
+    "lighting": {
+      "mood": "dark",
+      "keyColor": "#53f6ff",
+      "intensity": 1
+    }
+  },
+  "assets": []
+}

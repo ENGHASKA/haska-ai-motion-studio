@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-glass-ui",
+  "name": "Majed · glassUI",
+  "description": "إشعارات وكروت وويدجت بمادة زجاجية فوق الفيديو، كأن الشاشة تتكلم (adapted from majedphotos/video-ad-editor style \"glassUI\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#0e1116",
+    "surface": "#26292d",
+    "primary": "#d97757",
+    "accent": "#ffd9c7",
+    "text": "#ffffff",
+    "mutedText": "#abacad"
+  },
+  "typography": {
+    "display": {
+      "family": "Readex Pro",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "Readex Pro",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Readex Pro",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "playful"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "glassUI",
+      "families": [
+        "editorial",
+        "punch"
+      ],
+      "cues": [
+        "tech",
+        "app",
+        "list",
+        "chat"
+      ],
+      "blend": [
+        "keynote",
+        "terminal"
+      ],
+      "surface": "video",
+      "card": "glass",
+      "label": "notif",
+      "post": {
+        "grain": 0,
+        "vignette": 0.12
+      },
+      "needsCut": false
+    }
+  }
+}

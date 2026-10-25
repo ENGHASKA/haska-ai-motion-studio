@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "audio-motion-sample",
+  "title": "Signal Defense",
+  "language": "en",
+  "direction": "ltr",
+  "audioFile": "audio-projects/audio-motion-sample/source.wav",
+  "durationMs": 3865,
+  "fps": 30,
+  "displayWaveform": true,
+  "transcript": {
+    "schemaVersion": 1,
+    "language": "en",
+    "direction": "ltr",
+    "durationMs": 3865,
+    "corrected": true,
+    "segments": [
+      {
+        "id": "segment-001",
+        "startMs": 0,
+        "endMs": 1200,
+        "text": "Protect every signal.",
+        "words": [
+          {
+            "text": "Protect",
+            "startMs": 0,
+            "endMs": 450,
+            "timestampMs": 0,
+            "confidence": 0.0773703
+          },
+          {
+            "text": "every",
+            "startMs": 450,
+            "endMs": 740,
+            "timestampMs": 450,
+            "confidence": 0.930905
+          },
+          {
+            "text": "signal.",
+            "startMs": 740,
+            "endMs": 1200,
+            "timestampMs": 740,
+            "confidence": 0.258214
+          }
+        ],
+        "confidence": 0.4221631
+      },
+      {
+        "id": "segment-002",
+        "startMs": 1200,
+        "endMs": 2180,
+        "text": "Detect the threat.",
+        "words": [
+          {
+            "text": "Detect",
+            "startMs": 1200,
+            "endMs": 1590,
+            "timestampMs": 1200,
+            "confidence": 0.843981
+          },
+          {
+            "text": "the",
+            "startMs": 1590,
+            "endMs": 1730,
+            "timestampMs": 1590,
+            "confidence": 0.993995
+          },
+          {
+            "text": "threat.",
+            "startMs": 1730,
+            "endMs": 2180,
+            "timestampMs": 1730,
+            "confidence": 0.773424
+          }
+        ],
+        "confidence": 0.8704667
+      },
+      {
+        "id": "segment-003",
+        "startMs": 2180,
+        "endMs": 3730,
+        "text": "Respond with confidence.",
+        "words": [
+          {
+            "text": "Respond",
+            "startMs": 2180,
+            "endMs": 2710,
+            "timestampMs": 2180,
+            "confidence": 0.990815
+          },
+          {
+            "text": "with",
+            "startMs": 2710,
+            "endMs": 2820,
+            "timestampMs": 2710,
+            "confidence": 0.999016
+          },
+          {
+            "text": "confidence.",
+            "startMs": 2820,
+            "endMs": 3730,
+            "timestampMs": 2820,
+            "confidence": 0.746095
+          }
+        ],
+        "confidence": 0.9120087
+      }
+    ]
+  },
+  "storyboard": {
+    "schemaVersion": 1,
+    "title": "Signal Defense",
+    "language": "en",
+    "durationMs": 3865,
+    "scenes": [
+      {
+        "id": "scene-01",
+        "startMs": 0,
+        "endMs": 1200,
+        "narration": "Protect every signal.",
+        "onScreenText": "PROTECT EVERY SIGNAL",
+        "visualKind": "signal",
+        "animation": "A central signal branches to verified endpoints while the network draws outward.",
+        "visualAssetRequirements": [],
+        "semanticRationale": "The node topology directly represents signals moving through a protected network.",
+        "status": "reviewed"
+      },
+      {
+        "id": "scene-02",
+        "startMs": 1200,
+        "endMs": 2180,
+        "narration": "Detect the threat.",
+        "onScreenText": "DETECT THE THREAT",
+        "visualKind": "shield",
+        "animation": "The defensive boundary draws on, then the inner confirmation mark resolves decisively.",
+        "visualAssetRequirements": [],
+        "semanticRationale": "An abstract defensive boundary communicates threat detection without inventing software UI.",
+        "status": "reviewed"
+      },
+      {
+        "id": "scene-03",
+        "startMs": 2180,
+        "endMs": 3865,
+        "narration": "Respond with confidence.",
+        "onScreenText": "RESPOND WITH CONFIDENCE",
+        "visualKind": "process",
+        "animation": "Response nodes converge into a stable resolved state; motion settles without overshoot.",
+        "visualAssetRequirements": [],
+        "semanticRationale": "A converging response path depicts coordinated action and a controlled resolution.",
+        "status": "reviewed"
+      }
+    ]
+  }
+}

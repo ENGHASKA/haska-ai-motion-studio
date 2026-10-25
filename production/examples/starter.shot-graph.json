@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "id": "starter-example",
+  "title": "Public Starter Example",
+  "language": "en",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationFrames": 300,
+  "styleProfileId": "haska-cyber",
+  "version": 1,
+  "createdAt": "2026-10-25T00:00:00Z",
+  "updatedAt": "2026-10-25T00:00:00Z",
+  "shots": [
+    {
+      "id": "establish", "track": 0, "startFrame": 0, "durationFrames": 78,
+      "description": "Introduce the subject with a restrained title composition.",
+      "onScreenText": "Start with one clear idea.",
+      "engine": "remotion", "composition": "title", "assets": [], "approval": "draft"
+    },
+    {
+      "id": "develop", "track": 0, "startFrame": 78, "durationFrames": 72,
+      "description": "Develop the idea with a deterministic network visual.",
+      "onScreenText": "Build the visual argument.",
+      "engine": "remotion", "composition": "network", "assets": [], "approval": "draft",
+      "transitionIn": {"type": "camera-pull", "durationFrames": 12, "easing": "standard"}
+    },
+    {
+      "id": "resolve", "track": 0, "startFrame": 150, "durationFrames": 86,
+      "description": "Resolve the visual into a stable state.",
+      "onScreenText": "Make the conclusion readable.",
+      "engine": "remotion", "composition": "semantic", "visualKind": "process", "assets": [], "approval": "draft",
+      "transitionIn": {"type": "camera-pull", "durationFrames": 24, "easing": "standard"}
+    },
+    {
+      "id": "close", "track": 0, "startFrame": 236, "durationFrames": 64,
+      "description": "Close with a generic text-only call to action.",
+      "onScreenText": "Review. Approve. Render.",
+      "engine": "remotion", "composition": "title", "assets": [], "approval": "draft",
+      "transitionIn": {"type": "crossfade", "durationFrames": 20, "easing": "enter"}
+    }
+  ]
+}

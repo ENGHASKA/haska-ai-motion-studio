@@ -1,0 +1,36 @@
+:root { font-family: Inter, "Liberation Sans", Arial, sans-serif; color: #e9ffff; }
+* { box-sizing: border-box; }
+.cyber-root { overflow: hidden; background: radial-gradient(circle at 71% 46%, #082536 0, #04111d 31%, #02060d 72%); }
+.perspective-grid { position: absolute; inset: -30%; background-image: linear-gradient(rgba(83,246,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(83,246,255,.13) 1px,transparent 1px); background-size: 80px 80px; transform: perspective(900px) rotateX(64deg) translateY(470px) scale(1.4); transform-origin:center; mask-image:linear-gradient(to bottom,transparent 5%,#000 45%,transparent 90%); }
+.vignette { position:absolute; inset:0; box-shadow:inset 0 0 230px 95px rgba(0,0,0,.75); }
+.scanline { position:absolute; top:0; bottom:0; width:110px; background:linear-gradient(90deg,transparent,rgba(83,246,255,.14),transparent); filter:blur(12px); }
+.noise { position:absolute; inset:-20px; opacity:.055; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.top-rule { position:absolute; left:88px; right:88px; top:67px; display:flex; justify-content:space-between; padding-top:14px; border-top:2px solid rgba(83,246,255,.66); transform-origin:left; font:500 17px/1 "Liberation Mono",monospace; letter-spacing:.16em; color:#8dbec7; }
+.hero-lockup { position:absolute; left:170px; top:315px; width:970px; z-index:3; }
+.eyebrow { color:#00ffc7; font:700 20px/1.2 "Liberation Mono",monospace; letter-spacing:.32em; margin-bottom:26px; }
+h1 { margin:0; font-size:118px; line-height:.9; letter-spacing:-.07em; font-weight:800; filter:drop-shadow(0 0 26px rgba(83,246,255,.22)); }
+h1 span { display:block; color:transparent; -webkit-text-stroke:2px #53f6ff; letter-spacing:.06em; font-size:94px; margin-top:18px; }
+.title-echo { position:absolute; left:-5px; top:163px; font-size:94px; font-weight:800; color:#53f6ff; letter-spacing:.06em; filter:blur(1px); }
+.hero-lockup p { width:650px; margin-top:42px; color:#9bb8c1; font-size:25px; line-height:1.5; letter-spacing:.015em; }
+.shield-stage { position:absolute; right:170px; top:222px; width:510px; height:590px; display:grid; place-items:center; perspective:900px; }
+.shield { width:310px; filter:drop-shadow(0 0 18px rgba(83,246,255,.55)); z-index:2; }
+.shield-glow { position:absolute; width:320px; height:390px; border-radius:50%; background:#00dfe7; filter:blur(100px); opacity:.18!important; }
+.orbit { position:absolute; border:1px solid rgba(83,246,255,.35); border-radius:50%; }
+.orbit::after { content:''; position:absolute; width:10px; height:10px; border-radius:50%; background:#e9ffff; box-shadow:0 0 18px 7px #53f6ff; top:7%; left:19%; }
+.orbit-a { width:455px; height:455px; border-left-color:transparent; }
+.orbit-b { width:520px; height:330px; border-right-color:transparent; }
+.metrics { position:absolute; left:171px; bottom:90px; display:flex; gap:82px; z-index:3; }
+.metrics div { display:flex; flex-direction:column; border-left:2px solid #00ffc7; padding-left:17px; }
+.metrics strong { font:700 26px/1 "Liberation Mono",monospace; color:#e9ffff; }
+.metrics span { margin-top:11px; font:500 12px/1 "Liberation Mono",monospace; letter-spacing:.18em; color:#6f99a4; }
+.status-pill { position:absolute; right:188px; bottom:102px; border:1px solid rgba(0,255,199,.4); background:rgba(0,255,199,.06); padding:15px 20px; font:700 14px/1 "Liberation Mono",monospace; letter-spacing:.15em; color:#87ffe4; }
+.status-pill i { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:12px; background:#00ffc7; box-shadow:0 0 12px #00ffc7; }
+.hud-ring { position:absolute; border:1px dashed rgba(83,246,255,.3); border-radius:50%; }
+.hud-ring__inner { position:absolute; inset:16%; border:2px solid rgba(83,246,255,.25); border-top-color:#53f6ff; border-radius:50%; }
+.hud-ring__tick { position:absolute; left:50%; top:-7px; width:2px; height:30px; background:#53f6ff; box-shadow:0 0 10px #53f6ff; }
+.data-stream { position:absolute; top:0; display:flex; flex-direction:column; gap:28px; color:#53f6ff; font:400 12px/1 "Liberation Mono",monospace; opacity:.5; }
+.corner { position:absolute; width:70px; height:70px; border-color:rgba(83,246,255,.7); }
+.corner-tl { top:116px; left:88px; border-left:2px solid; border-top:2px solid; }
+.corner-br { right:88px; bottom:63px; border-right:2px solid; border-bottom:2px solid; }
+.frame-counter { position:absolute; right:88px; top:101px; font:400 12px/1 "Liberation Mono",monospace; color:#547680; letter-spacing:.12em; }
+.three-label { position:absolute; left:70px; bottom:60px; font:700 18px/1 "Liberation Mono",monospace; color:#53f6ff; letter-spacing:.22em; border-left:3px solid #00ffc7; padding-left:18px; }

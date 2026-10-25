@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "video-ad-editor": "886cae69add821367f6c7bb9d9115a34e2427b21",
+    "majed-plugins": "22ae9594fde716178602fae728a9d73a3b56406d",
+    "majed-davinci": "331ea9db729e636c2fc80e1450552b7994a9afb3"
+  },
+  "statuses": [
+    "integrated",
+    "adapted",
+    "platform-optional",
+    "blocked",
+    "unavailable"
+  ],
+  "counts": {
+    "integrated": 3,
+    "adapted": 13,
+    "platform-optional": 4,
+    "blocked": 4,
+    "unavailable": 6
+  },
+  "rows": [
+    {
+      "id": "arabic-ad-editing",
+      "capability": "Arabic video ad editing",
+      "arabic": "مونتاج إعلانات فيديو بالعربية",
+      "status": "adapted",
+      "evidence": [
+        ".agents/skills/haska-video/modes/motion-bank.md",
+        "src/majed/TalkingHeadReel.tsx",
+        "scripts/media_tools.py",
+        "tests/production/majed-timeline.test.ts"
+      ],
+      "reason": "Upstream is a Claude-skill workflow over its own Chrome+ffmpeg renderer; HASKA keeps Remotion as master timeline and routes requests through the haska-video skill.",
+      "verified": "frame-level stills + unit tests; no real footage"
+    },
+    {
+      "id": "motion-video-generation",
+      "capability": "Motion-video generation",
+      "arabic": "توليد فيديو موشن",
+      "status": "adapted",
+      "evidence": [
+        "src/majed/MoveShowcase.tsx",
+        "src/production/render/ProductionVideo.tsx",
+        "production/reports/moves-smoke.json"
+      ],
+      "reason": "Motion is generated as deterministic Remotion compositions. Upstream's generative-AI scenes (fal.ai) are a separate paid service: see 'ai-scene-generation'.",
+      "verified": "97/97 drawable moves rendered as stills"
+    },
+    {
+      "id": "motion-preset-library",
+      "capability": "Motion preset library (100 moves)",
+      "arabic": "مكتبة الحركات",
+      "status": "integrated",
+      "evidence": [
+        "third_party/majed-video/motion/moves.js",
+        "src/majed/catalog.ts",
+        "src/majed/context.ts",
+        "production/reports/moves-smoke.json",
+        "production/reports/video-moves-smoke.json"
+      ],
+      "reason": "All 100 catalog entries are vendored; 97 draw; jcut, matchCut and ramp are timing rules (no drawing in upstream either). Footage moves verified with a synthetic clip; craneUp draws but its use of the footage was not confirmed.",
+      "verified": "scripts/smoke_moves.mjs, scripts/smoke_video_moves.mjs"
+    },
+    {
+      "id": "visual-style-library",
+      "capability": "Visual style library (17 styles)",
+      "arabic": "مكتبة الستايلات البصرية",
+      "status": "adapted",
+      "evidence": [
+        "third_party/majed-video/motion/styles.js",
+        "scripts/derive_majed_styles.mjs",
+        "production/style-profiles/majed-keynote.json"
+      ],
+      "reason": "Colours, fonts and personality become StyleProfiles (validated). Upstream per-style post effects (grain, vignette, card/label variants) are kept only as metadata in extensions['majed-video'].",
+      "verified": "npm run production -- validate"
+    },
+    {
+      "id": "arabic-kinetic-typography",
+      "capability": "Arabic kinetic typography",
+      "arabic": "تايبوغرافي عربي متحرك",
+      "status": "integrated",
+      "evidence": [
+        "src/majed/engine-core.js",
+        "scripts/derive_majed_engine.py",
+        "src/typography/kinetic.ts"
+      ],
+      "reason": "Upstream Arabic text engine (word layout, kashida, joining, digits) is derived byte-for-byte; HASKA's own word-level kinetic planner is unchanged.",
+      "verified": "stills of text moves reviewed visually; python3 scripts/derive_majed_engine.py --check"
+    },
+    {
+      "id": "text-behind-subject",
+      "capability": "Text behind the subject",
+      "arabic": "نص خلف الشخص",
+      "status": "platform-optional",
+      "evidence": [
+        "src/majed/TextBehindSubject.tsx",
+        ".agents/skills/haska-video/modes/text-behind-subject.md",
+        "scripts/smoke_majed_features.mjs"
+      ],
+      "reason": "Compositing works with any matte (verified with a green-screen fixture). Automatic person matte uses macOS Vision in upstream and is not available on Linux/Windows; supply a matte or use green screen.",
+      "verified": "pixel check on a synthetic green-screen clip"
+    },
+    {
+      "id": "podcast-to-reels",
+      "capability": "Podcast to Reels",
+      "arabic": "من بودكاست إلى ريلز",
+      "status": "adapted",
+      "evidence": [
+        ".agents/skills/haska-video/modes/podcast.md",
+        "scripts/cutplan.py",
+        "src/majed/TalkingHeadReel.tsx"
+      ],
+      "reason": "Moment selection is done by Claude from the transcript; cuts and captions use the cut-plan tools. Speaker/face tracking for multi-cam is macOS-only upstream and is not automated.",
+      "verified": "tools + composition verified on synthetic media"
+    },
+    {
+      "id": "montage-rhythm",
+      "capability": "Montage and rhythm editing",
+      "arabic": "مونتاج إيقاعي",
+      "status": "adapted",
+      "evidence": [
+        "src/majed/montage.ts",
+        "src/majed/MontageReel.tsx",
+        "scripts/media_tools.py",
+        "tests/production/majed-timeline.test.ts"
+      ],
+      "reason": "Beat detection is HASKA's own numpy implementation (about 1% tempo error and about 30 ms beat error on a synthetic click track; not compared with upstream beat.py and not tested on real music).",
+      "verified": "click-track test + frame check"
+    },
+    {
+      "id": "silence-and-text-cuts",
+      "capability": "Silence removal and text-based cuts",
+      "arabic": "حذف الصمت والقص بالنص",
+      "status": "adapted",
+      "evidence": [
+        "scripts/cutplan.py",
+        "scripts/media_tools.py",
+        "src/majed/timeline.ts"
+      ],
+      "reason": "Silence plan, drop/keep/undo by phrase or word range, caption remap. Cut spans are pure data shared by Python and the composition.",
+      "verified": "python + TS unit tests, frame check"
+    },
+    {
+      "id": "narration-driven-motion",
+      "capability": "Motion driven by narration meaning",
+      "arabic": "حركة مبنية على معنى الكلام",
+      "status": "integrated",
+      "evidence": [
+        ".claude/commands/audio-to-motion.md",
+        "src/audio/AudioExplainer.tsx",
+        "scripts/audio_motion.py"
+      ],
+      "reason": "Already native to HASKA's Audio-to-Motion (transcript to reviewed semantic storyboard); the Majed move bank is now available to those scenes. Upstream's SigLIP2 shot search needs a model download: see 'shot-search'.",
+      "verified": "existing Audio-to-Motion tests (reel project untouched)"
+    },
+    {
+      "id": "one-shot-transitions",
+      "capability": "One-shot transitions / continuous camera",
+      "arabic": "انتقالات اللقطة الواحدة",
+      "status": "adapted",
+      "evidence": [
+        "src/majed/catalog.ts",
+        "src/motion/CameraRig.tsx",
+        "third_party/majed-video/motion/examples/one-take/project.json"
+      ],
+      "reason": "The 20 transition moves (craneUp, swishSettle, punchCut, ...) and HASKA's CameraRig cover it. Upstream's multi-scene one-take project runtime is not ported; its example is vendored for reference.",
+      "verified": "transition moves in moves-smoke.json"
+    },
+    {
+      "id": "cover-thumbnail",
+      "capability": "Cover and thumbnail generation",
+      "arabic": "غلاف وصورة مصغّرة",
+      "status": "adapted",
+      "evidence": [
+        "src/majed/CoverStill.tsx",
+        "src/majed/cover-rules.ts",
+        "tests/production/majed-timeline.test.ts"
+      ],
+      "reason": "CoverReel / CoverYouTube stills with the upstream size and safe-area rules as checkable code. Upstream's multi-variant generator and phone-preview grid are not ported.",
+      "verified": "layout rules tested; stills rendered with rule report"
+    },
+    {
+      "id": "editable-timeline",
+      "capability": "Editable timeline",
+      "arabic": "تايم لاين قابل للتعديل",
+      "status": "adapted",
+      "evidence": [
+        "src/root.tsx",
+        "src/production/shot-graph.ts",
+        "scripts/cutplan.py"
+      ],
+      "reason": "Remotion Studio plus ShotGraph/cut-plan JSON are the editable timeline. Upstream's local review web page (studio.py HTTP server) is deliberately not ported.",
+      "verified": "Studio compositions listed (npm run compositions)"
+    },
+    {
+      "id": "website-product-explainer",
+      "capability": "Website and product explainers",
+      "arabic": "شرح المواقع والمنتجات",
+      "status": "adapted",
+      "evidence": [
+        "scripts/web_capture.mjs",
+        ".agents/skills/haska-video/modes/explainer.md"
+      ],
+      "reason": "Page capture uses the machine's own Chromium/Chrome/Edge on request; device framing via moves. Upstream's puppeteer-core capture and 3D device scene scripts are not used.",
+      "verified": "captured a local test page"
+    },
+    {
+      "id": "reference-styling",
+      "capability": "Reference-based styling",
+      "arabic": "ستايل مبني على مرجع",
+      "status": "adapted",
+      "evidence": [
+        "scripts/media_tools.py",
+        ".agents/skills/haska-video/modes/reference-style.md"
+      ],
+      "reason": "Palette extraction from a reference image into a StyleProfile only (fixed seed). Typography and pacing from references remain a manual judgement.",
+      "verified": "palette command run on a synthetic image"
+    },
+    {
+      "id": "sound-finishing",
+      "capability": "Sound design and finishing",
+      "arabic": "تصميم الصوت واللمسات الأخيرة",
+      "status": "adapted",
+      "evidence": [
+        "scripts/media_tools.py",
+        "scripts/sound_design.py",
+        ".agents/skills/haska-video/modes/finish-and-interop.md"
+      ],
+      "reason": "Two-pass -14 LUFS master, enhance chain (high-pass, afftdn, compressor) and picture scope check with FFmpeg. Upstream's deep-filter binary download is not used. Results judged by measurement, not by ear.",
+      "verified": "master/check run on synthetic media"
+    },
+    {
+      "id": "editor-interop",
+      "capability": "CapCut / DaVinci interoperability",
+      "arabic": "التوافق مع كاب كات ودافنشي",
+      "status": "adapted",
+      "evidence": [
+        "scripts/media_tools.py",
+        ".agents/skills/haska-video/modes/finish-and-interop.md"
+      ],
+      "reason": "CMX3600 EDL and OpenTimelineIO export of the cut plan. Not verified inside DaVinci/Premiere/CapCut (none installed). See rows 'capcut-export' and 'davinci-scripting'.",
+      "verified": "files generated and parsed; not opened in an editor"
+    },
+    {
+      "id": "person-matte-macos",
+      "capability": "Automatic person matte (Vision)",
+      "arabic": "قص الشخص تلقائيا",
+      "status": "platform-optional",
+      "evidence": [
+        "third_party/majed-video/macos/personmask.swift"
+      ],
+      "reason": "Swift/Vision requires macOS. HASKA accepts an externally supplied matte or a green-screen key.",
+      "verified": "not run"
+    },
+    {
+      "id": "face-hand-tracking",
+      "capability": "Face and hand tracking moves",
+      "arabic": "تتبع الوجه واليد",
+      "status": "platform-optional",
+      "evidence": [
+        "third_party/majed-video/macos/facetrack.swift",
+        "third_party/majed-video/macos/handpose.swift"
+      ],
+      "reason": "macOS Vision only. The affected moves (85, 86, 89, 91) fall back to their static positions.",
+      "verified": "not run"
+    },
+    {
+      "id": "hdr-to-sdr",
+      "capability": "HDR to SDR conversion",
+      "arabic": "تحويل HDR",
+      "status": "platform-optional",
+      "evidence": [
+        "third_party/majed-video/macos/hdr2sdr.swift"
+      ],
+      "reason": "macOS tool. FFmpeg zscale/tonemap can do it but was not integrated or tested.",
+      "verified": "not run"
+    },
+    {
+      "id": "ai-scene-generation",
+      "capability": "Generative AI scenes (fal.ai)",
+      "arabic": "توليد مشاهد بالذكاء الاصطناعي",
+      "status": "blocked",
+      "evidence": [],
+      "reason": "Paid cloud service with an API key (FAL_KEY). Not added without explicit approval.",
+      "verified": "not run"
+    },
+    {
+      "id": "avatar-scene",
+      "capability": "Talking-avatar scene",
+      "arabic": "مشهد أفاتار ناطق",
+      "status": "blocked",
+      "evidence": [],
+      "reason": "Uses the same paid cloud generator.",
+      "verified": "not run"
+    },
+    {
+      "id": "shot-search",
+      "capability": "Semantic shot search (SigLIP2)",
+      "arabic": "بحث اللقطات بالمعنى",
+      "status": "blocked",
+      "evidence": [],
+      "reason": "Needs a multi-hundred-MB model download and PyTorch; requires approval before download.",
+      "verified": "not run"
+    },
+    {
+      "id": "quran-api",
+      "capability": "Quran verse fetch",
+      "arabic": "جلب الآيات",
+      "status": "unavailable",
+      "evidence": [],
+      "reason": "Fetches from a web API; HASKA stays local-only. Rule kept: never type Quran text from memory; the user supplies a verified source.",
+      "verified": "not run"
+    },
+    {
+      "id": "capcut-export",
+      "capability": "CapCut draft export",
+      "arabic": "تصدير مسودة كاب كات",
+      "status": "blocked",
+      "evidence": [],
+      "reason": "Upstream writes undocumented CapCut draft files using exec() on sliced source; not vendored. Use EDL or the rendered MP4.",
+      "verified": "not run"
+    },
+    {
+      "id": "davinci-scripting",
+      "capability": "DaVinci Resolve scripting (majed-davinci)",
+      "arabic": "سكربت دافنشي",
+      "status": "unavailable",
+      "evidence": [],
+      "reason": "Drives Resolve Studio 21.1 on macOS via its scripting API; cannot run on this machine.",
+      "verified": "not run"
+    },
+    {
+      "id": "video-ad-editor-setup-update",
+      "capability": "Upstream installer and auto-update",
+      "arabic": "التثبيت والتحديث التلقائي",
+      "status": "unavailable",
+      "evidence": [
+        "third_party/majed-video/UPSTREAM.json"
+      ],
+      "reason": "Removed on purpose: it silently checks GitHub, overwrites its own folder with rsync --delete, and runs sudo/curl installers. HASKA pins commits and never auto-updates.",
+      "verified": "audit only"
+    },
+    {
+      "id": "promotional-footers",
+      "capability": "Course/affiliate promotion instructions",
+      "arabic": "الإعلانات الترويجية",
+      "status": "unavailable",
+      "evidence": [
+        "docs/majed/AUDIT.md"
+      ],
+      "reason": "Upstream instructions tell the assistant to append promotions to deliveries; HASKA does not follow them.",
+      "verified": "audit only"
+    },
+    {
+      "id": "content-engine-publishing",
+      "capability": "Social publishing (majed-plugins/content-engine)",
+      "arabic": "النشر الاجتماعي",
+      "status": "unavailable",
+      "evidence": [],
+      "reason": "No licence in that repository and it publishes through a cloud service.",
+      "verified": "not vendored"
+    },
+    {
+      "id": "upstream-review-server",
+      "capability": "Upstream local review server (studio.py)",
+      "arabic": "خادم المراجعة المحلي",
+      "status": "unavailable",
+      "evidence": [],
+      "reason": "Replaced by Remotion Studio; avoids a second local HTTP server.",
+      "verified": "not ported"
+    }
+  ]
+}

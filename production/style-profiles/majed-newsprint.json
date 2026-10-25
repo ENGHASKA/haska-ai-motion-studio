@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-newsprint",
+  "name": "Majed · newsprint",
+  "description": "ورق جرايد، عنوان عريض، أعمدة رفيعة، وأحمر للعاجل بس (adapted from majedphotos/video-ad-editor style \"newsprint\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#e9e5dc",
+    "surface": "#dcd9d0",
+    "primary": "#c8102e",
+    "accent": "#c8102e",
+    "text": "#161513",
+    "mutedText": "#605e59"
+  },
+  "typography": {
+    "display": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "newsprint",
+      "families": [
+        "editorial"
+      ],
+      "cues": [
+        "news",
+        "breaking",
+        "source"
+      ],
+      "blend": [
+        "archive",
+        "explainer"
+      ],
+      "surface": "newspaper",
+      "card": "column",
+      "label": "headline",
+      "post": {
+        "grain": 0.06,
+        "vignette": 0.15
+      },
+      "needsCut": true
+    }
+  }
+}

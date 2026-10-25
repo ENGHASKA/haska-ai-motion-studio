@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "audio-motion-sample",
+  "title": "Signal Defense",
+  "language": "en",
+  "sourceFile": "source.wav",
+  "normalizedFile": "narration.wav",
+  "durationMs": 3865,
+  "audio": {
+    "codec_name": "pcm_s16le",
+    "sample_rate": "16000",
+    "channels": 1
+  }
+}

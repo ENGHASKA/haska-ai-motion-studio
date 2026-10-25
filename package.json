@@ -1,0 +1,55 @@
+{
+  "name": "haska-ai-motion-studio",
+  "version": "0.1.0-beta.1",
+  "private": true,
+  "description": "Local-first bilingual motion graphics studio built with Remotion, React, TypeScript, GSAP, and Three.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/studio.mjs",
+    "typecheck": "tsc --noEmit",
+    "compositions": "remotion compositions src/index.ts",
+    "audio": "python3 scripts/audio_motion.py",
+    "audio:sample": "python3 scripts/audio_motion.py sample",
+    "audio:check": "python3 scripts/audio_motion.py doctor",
+    "production": "node scripts/ts-run.mjs cli",
+    "test:production": "node scripts/ts-run.mjs test",
+    "render": "remotion render src/index.ts CybersecurityIntro out/cybersecurity-intro.mp4 --codec=h264 --crf=18 --color-space=bt709",
+    "render:3d": "remotion render src/index.ts CyberGrid3D out/cyber-grid-3d.mp4 --codec=h264 --crf=18 --color-space=bt709",
+    "studio": "node scripts/studio.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "smoke:moves": "node scripts/smoke_moves.mjs",
+    "smoke:video-moves": "node scripts/smoke_video_moves.mjs",
+    "smoke:majed": "node scripts/smoke_majed_features.mjs",
+    "package:portable": "python3 scripts/release.py",
+    "verify:package": "python3 scripts/verify_package.py",
+    "release:build": "python3 scripts/release.py"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.2",
+    "@react-three/postprocessing": "3.2.2",
+    "@react-three/rapier": "2.2.0",
+    "@remotion/captions": "4.0.538",
+    "@remotion/media": "4.0.538",
+    "@remotion/media-utils": "4.0.538",
+    "@remotion/three": "4.0.538",
+    "gsap": "3.15.0",
+    "postprocessing": "6.39.5",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.538",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.538",
+    "@types/react": "19.2.2",
+    "@types/three": "0.181.0",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "zod": "4.6.7"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.ai-motion-studio/schemas/transcript.schema.json",
+  "title": "Audio Motion Transcript",
+  "type": "object",
+  "required": ["schemaVersion", "language", "direction", "durationMs", "corrected", "segments"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "language": {"type": "string", "minLength": 2},
+    "direction": {"enum": ["rtl", "ltr"]},
+    "durationMs": {"type": "integer", "minimum": 1},
+    "corrected": {"type": "boolean"},
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "startMs", "endMs", "text", "words", "confidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "startMs": {"type": "integer", "minimum": 0},
+          "endMs": {"type": "integer", "minimum": 1},
+          "text": {"type": "string"},
+          "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+          "words": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "startMs", "endMs", "timestampMs", "confidence"],
+              "properties": {
+                "text": {"type": "string"},
+                "startMs": {"type": "integer", "minimum": 0},
+                "endMs": {"type": "integer", "minimum": 1},
+                "timestampMs": {"type": ["integer", "null"], "minimum": 0},
+                "confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+                "pageBreakAfter": {"type": "boolean"}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

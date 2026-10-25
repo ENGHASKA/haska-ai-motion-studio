@@ -1,0 +1,16 @@
+{
+  "title": "Fonts bundled with majed-video (motion moves)",
+  "source": {
+    "kind": "third-party",
+    "origin": "https://github.com/majedphotos/video-ad-editor @ 886cae69add821367f6c7bb9d9115a34e2427b21 (motion/fonts); original upstreams are Google Fonts / SIL project repositories",
+    "recordedAt": "2026-10-25T13:30:00Z"
+  },
+  "license": {
+    "id": "OFL-1.1",
+    "name": "SIL Open Font License 1.1",
+    "url": "https://openfontlicense.org",
+    "commercialUse": "yes",
+    "attributionRequired": false
+  },
+  "notes": "Each family's own OFL text and copyright line is in LICENSES.txt next to the files. The OFL requires that license text travels with any redistribution of the font files; the portable package includes it."
+}

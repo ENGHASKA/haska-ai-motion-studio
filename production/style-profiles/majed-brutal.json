@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-brutal",
+  "name": "Majed · brutal",
+  "description": "ألوان صارخة، حدود سودة عريضة وظل قاسي، ضربة واهتزاز — للهوك والطلب بس (adapted from majedphotos/video-ad-editor style \"brutal\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#ffe600",
+    "surface": "#f0d800",
+    "primary": "#ff3b00",
+    "accent": "#ff3b00",
+    "text": "#000000",
+    "mutedText": "#595100"
+  },
+  "typography": {
+    "display": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "energetic"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "brutal",
+      "families": [
+        "punch"
+      ],
+      "cues": [
+        "hook",
+        "cta",
+        "hit"
+      ],
+      "blend": [
+        "swiss",
+        "stickerToon"
+      ],
+      "surface": "video",
+      "card": "brutal",
+      "label": "boxed",
+      "post": {
+        "grain": 0,
+        "vignette": 0
+      },
+      "needsCut": false
+    }
+  }
+}

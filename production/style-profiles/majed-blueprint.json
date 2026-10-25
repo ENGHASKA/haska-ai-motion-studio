@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-blueprint",
+  "name": "Majed · blueprint",
+  "description": "أزرق وشبكة قياس، خطوط تنرسم وأسهم أبعاد وcallouts تأشر (adapted from majedphotos/video-ad-editor style \"blueprint\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#1e4c8f",
+    "surface": "#355e9a",
+    "primary": "#ff9f43",
+    "accent": "#9fd3ff",
+    "text": "#ffffff",
+    "mutedText": "#b0c0d8"
+  },
+  "typography": {
+    "display": {
+      "family": "Noto Kufi Arabic",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "Readex Pro",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Noto Kufi Arabic",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "blueprint",
+      "families": [
+        "editorial",
+        "calm"
+      ],
+      "cues": [
+        "how",
+        "explain",
+        "parts",
+        "tech"
+      ],
+      "blend": [
+        "terminal",
+        "swiss"
+      ],
+      "surface": "blueprint",
+      "card": "outline",
+      "label": "callout",
+      "post": {
+        "grain": 0.02,
+        "vignette": 0.2
+      },
+      "needsCut": true
+    }
+  }
+}

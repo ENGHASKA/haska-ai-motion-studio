@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-editorial",
+  "name": "Majed · editorial",
+  "description": "غلاف مجلة: عنوان ضخم ورا الراس، خطوط رفيعة، أرقام صغيرة بالزوايا (adapted from majedphotos/video-ad-editor style \"editorial\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#f1ece3",
+    "surface": "#e4dfd7",
+    "primary": "#c8382b",
+    "accent": "#c8382b",
+    "text": "#141414",
+    "mutedText": "#61605c"
+  },
+  "typography": {
+    "display": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "editorial",
+      "families": [
+        "editorial",
+        "calm"
+      ],
+      "cues": [
+        "quote",
+        "profile",
+        "story",
+        "title"
+      ],
+      "blend": [
+        "swiss",
+        "keynote"
+      ],
+      "surface": "solid",
+      "card": "rule",
+      "label": "masthead",
+      "post": {
+        "grain": 0.02,
+        "vignette": 0
+      },
+      "needsCut": true
+    }
+  }
+}

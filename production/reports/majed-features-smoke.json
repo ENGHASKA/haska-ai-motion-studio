@@ -1,0 +1,51 @@
+{
+  "generatedBy": "scripts/smoke_majed_features.mjs",
+  "input": "synthetic ffmpeg media",
+  "results": [
+    {
+      "name": "silence tool removed the gap",
+      "ok": true,
+      "detail": "keep=[{\"start\":0,\"end\":1.08},{\"start\":2.42,\"end\":4}]"
+    },
+    {
+      "name": "beat tool found ~120 BPM",
+      "ok": true,
+      "detail": "bpm=119.17"
+    },
+    {
+      "name": "TalkingHeadReel duration equals the edited length",
+      "ok": true,
+      "detail": "frames=79"
+    },
+    {
+      "name": "TalkingHeadReel draws footage",
+      "ok": true,
+      "detail": "stddev=56.1"
+    },
+    {
+      "name": "MontageReel draws footage",
+      "ok": true,
+      "detail": "stddev=55.4"
+    },
+    {
+      "name": "CoverReel follows the cover rules",
+      "ok": true,
+      "detail": "title 230px issues=[]"
+    },
+    {
+      "name": "CoverYouTube follows the cover rules",
+      "ok": true,
+      "detail": "title 192px issues=[]"
+    },
+    {
+      "name": "TextBehindSubject keeps the subject in front of the text",
+      "ok": true,
+      "detail": "centre pixel=255,25,1"
+    },
+    {
+      "name": "TextBehindSubject shows the background elsewhere",
+      "ok": true,
+      "detail": "background pixel=0,216,2"
+    }
+  ]
+}

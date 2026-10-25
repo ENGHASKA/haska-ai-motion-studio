@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-keynote",
+  "name": "Majed · keynote",
+  "description": "فراغ كبير، كلمة وحدة تحمل المشهد، حركة قليلة مضبوطة (adapted from majedphotos/video-ad-editor style \"keynote\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#f5f5f7",
+    "surface": "#e8e8ea",
+    "primary": "#d97757",
+    "accent": "#f6c7a8",
+    "text": "#1d1d1f",
+    "mutedText": "#69696b"
+  },
+  "typography": {
+    "display": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "keynote",
+      "families": [
+        "calm",
+        "onetake"
+      ],
+      "cues": [
+        "reveal",
+        "number",
+        "launch",
+        "calm"
+      ],
+      "blend": [
+        "explainer",
+        "devCard",
+        "studio3D"
+      ],
+      "surface": "clean",
+      "card": "soft",
+      "label": "clean",
+      "post": {
+        "grain": 0,
+        "vignette": 0.1
+      },
+      "needsCut": true
+    }
+  }
+}

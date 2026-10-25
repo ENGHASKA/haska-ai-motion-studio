@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-archive",
+  "name": "Majed · archive",
+  "description": "حبيبات فلم، ملف مانيلا، آلة كاتبة، ختم أحمر، وكن بيرنز بطيء (adapted from majedphotos/video-ad-editor style \"archive\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#2a231a",
+    "surface": "#3e372e",
+    "primary": "#b3261e",
+    "accent": "#d9c59a",
+    "text": "#f4efe6",
+    "mutedText": "#ada89f"
+  },
+  "typography": {
+    "display": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Aref Ruqaa",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "archive",
+      "families": [
+        "calm",
+        "editorial"
+      ],
+      "cues": [
+        "story",
+        "history",
+        "reveal",
+        "secret",
+        "date"
+      ],
+      "blend": [
+        "explainer",
+        "paperCut",
+        "newsprint"
+      ],
+      "surface": "film",
+      "card": "manila",
+      "label": "stamp",
+      "post": {
+        "grain": 0.09,
+        "vignette": 0.45
+      },
+      "needsCut": false
+    }
+  }
+}

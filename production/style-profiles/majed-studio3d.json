@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-studio3d",
+  "name": "Majed · studio3D",
+  "description": "خلفية كريمية بإضاءة ناعمة، اسم بارز كأنه مجسّم مطفي، وتاق أسود صغير (adapted from majedphotos/video-ad-editor style \"studio3D\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#efe7da",
+    "surface": "#e2dbcf",
+    "primary": "#d97757",
+    "accent": "#ffffff",
+    "text": "#1e1d1b",
+    "mutedText": "#67645e"
+  },
+  "typography": {
+    "display": {
+      "family": "Cairo",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Cairo",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "premium"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "studio3D",
+      "families": [
+        "calm",
+        "onetake"
+      ],
+      "cues": [
+        "launch",
+        "tool",
+        "free",
+        "name"
+      ],
+      "blend": [
+        "keynote",
+        "devCard"
+      ],
+      "surface": "studio",
+      "card": "soft",
+      "label": "extrude",
+      "post": {
+        "grain": 0.02,
+        "vignette": 0.22
+      },
+      "needsCut": true
+    }
+  }
+}

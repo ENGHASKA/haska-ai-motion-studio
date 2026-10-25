@@ -1,0 +1,10 @@
+* text=auto
+*.sh text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.wav binary
+*.ttf binary
+*.png binary
+third_party/** -text
+public/fonts/** -text

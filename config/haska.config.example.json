@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy to ./haska.config.json (git-ignored) only if a tool is not on PATH. All fields are optional; no secrets belong here.",
+  "python": "",
+  "browserExecutable": "",
+  "tools": {
+    "ffmpeg": "",
+    "ffprobe": "",
+    "whisper-cli": "",
+    "blender": ""
+  },
+  "windows": {
+    "_comment": "Examples: C:\\Tools\\ffmpeg\\bin\\ffmpeg.exe . Use forward slashes or doubled backslashes."
+  }
+}

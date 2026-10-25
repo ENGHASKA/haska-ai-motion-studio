@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-sticker-toon",
+  "name": "Majed · stickerToon",
+  "description": "باستيل وحدود سودة ثابتة السماكة، فقاعات وماسكوت ينط — مرح (adapted from majedphotos/video-ad-editor style \"stickerToon\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#f7c6d9",
+    "surface": "#e9bbcd",
+    "primary": "#ff7a1a",
+    "accent": "#cfe6ff",
+    "text": "#111111",
+    "mutedText": "#615057"
+  },
+  "typography": {
+    "display": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "playful"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "stickerToon",
+      "families": [
+        "punch"
+      ],
+      "cues": [
+        "fun",
+        "tool",
+        "explain",
+        "kids"
+      ],
+      "blend": [
+        "doodle",
+        "paperCut"
+      ],
+      "surface": "pastel",
+      "card": "toon",
+      "label": "pill",
+      "post": {
+        "grain": 0,
+        "vignette": 0
+      },
+      "needsCut": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "generatedBy": "scripts/smoke_video_moves.mjs",
+  "input": "synthetic ffmpeg testsrc2 pattern (not real footage)",
+  "results": [
+    {
+      "move": "craneUp",
+      "ok": true,
+      "usedVideo": false,
+      "coverage": 0.6087566657311254
+    }
+  ]
+}

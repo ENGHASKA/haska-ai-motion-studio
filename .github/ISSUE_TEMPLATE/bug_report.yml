@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible HASKA problem without private media
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Never attach credentials, private narration, client footage or sensitive logs.
+  - type: input
+    id: version
+    attributes:
+      label: HASKA version
+      placeholder: v0.1.0-beta.1
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Kali Linux, Ubuntu/Debian, Windows 10, Windows 11, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include non-private inputs and exact commands.
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Sanitized doctor output
+      description: Remove usernames and machine-specific paths.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

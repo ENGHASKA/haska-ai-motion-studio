@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "upstream": {
+    "repository": "https://github.com/majedphotos/video-ad-editor",
+    "license": "MIT (Copyright (c) 2026 Majed Alzaabi)",
+    "version": "6.1.0",
+    "commit": "886cae69add821367f6c7bb9d9115a34e2427b21",
+    "archiveSha256": "c778435c3327ba170f69f68ad6a45fac20d788246a97402ff07684ad166bb85a"
+  },
+  "relatedRepositories": [
+    {
+      "repository": "https://github.com/majedphotos/majed-plugins",
+      "commit": "22ae9594fde716178602fae728a9d73a3b56406d",
+      "license": "none at repository root; MIT only inside script/ and live-stage/",
+      "vendored": false
+    },
+    {
+      "repository": "https://github.com/majedphotos/majed-davinci",
+      "commit": "331ea9db729e636c2fc80e1450552b7994a9afb3",
+      "license": "MIT",
+      "vendored": false,
+      "why": "drives DaVinci Resolve Studio 21.1 (macOS) through its scripting API; cannot run here"
+    }
+  ],
+  "inspectedFiles": 336,
+  "vendoredFiles": 62,
+  "excluded": {
+    "**/SKILL.md": "skill instructions embed a promotional footer and an auto-update path; replaced by HASKA skills",
+    "references/keyword-automation.md": "affiliate/referral promotion",
+    "video-ad-editor/scripts/00_setup.sh": "silent GitHub update check + rsync --delete self-overwrite + sudo/curl installers",
+    "video-ad-editor/studio/**": "local Python HTTP server and share page; replaced by Remotion Studio",
+    "video-ad-editor/motion/moves/previews/**": "100 rendered preview videos (14 MB), not needed",
+    "video-ad-editor/motion/vendor/**": "vendored three.js; HASKA already depends on three",
+    "_pkg/**, *.gif, *.skill": "marketing images and a packaged zip",
+    "video-ad-editor/onboarding/**": "onboarding page with promotion"
+  },
+  "autoUpdate": "disabled: nothing from upstream is installed as a plugin and its update script is never run",
+  "files": [
+    {
+      "upstream": "LICENSE",
+      "path": "third_party/majed-video/LICENSE",
+      "sha256": "cc43993903be2f7775228fad292fbb5b932d2c301deb9b90f0213172c9a8a52e",
+      "bytes": 1070
+    },
+    {
+      "upstream": "video-ad-editor/motion/moves.js",
+      "path": "third_party/majed-video/motion/moves.js",
+      "sha256": "de47d9fed858ff9329b2cd575a5fe07b68f4abc7d15e9ebcad0189ef49d8fc4f",
+      "bytes": 258871
+    },
+    {
+      "upstream": "video-ad-editor/motion/styles.js",
+      "path": "third_party/majed-video/motion/styles.js",
+      "sha256": "a0eaeeba16b6df37a6b79b66846dc47722ce37986ad7856e60c9f613eaeb3318",
+      "bytes": 51694
+    },
+    {
+      "upstream": "video-ad-editor/motion/engine.js",
+      "path": "third_party/majed-video/motion/engine.js",
+      "sha256": "a2737a01967b964d0c82265a8d286bb6a15d3fbe243467035c4a21145ddfdd42",
+      "bytes": 58216
+    },
+    {
+      "upstream": "video-ad-editor/motion/ENGINE-API.md",
+      "path": "third_party/majed-video/motion/ENGINE-API.md",
+      "sha256": "0d08882c37c48f1801b7961bfb1cf18aeca17af7b7cdb5ae646c20eb94fcbe19",
+      "bytes": 18377
+    },
+    {
+      "upstream": "video-ad-editor/motion/moves/catalog.json",
+      "path": "third_party/majed-video/motion/moves/catalog.json",
+      "sha256": "53e42056bc461429c946206e0e45a9ba3ae98257ba8c19bcda757d382e680685",
+      "bytes": 64076
+    },
+    {
+      "upstream": "video-ad-editor/motion/moves/CREDITS.md",
+      "path": "third_party/majed-video/motion/moves/CREDITS.md",
+      "sha256": "4f0fd0754c9c0bfddd81393743f0a25387c57381b565d6a1b725dc7e22841644",
+      "bytes": 13749
+    },
+    {
+      "upstream": "video-ad-editor/motion/styles/catalog.json",
+      "path": "third_party/majed-video/motion/styles/catalog.json",
+      "sha256": "f86187ba46de2d48c2dffe792ed58a81d7954af5723e0ca706355093e2ab2993",
+      "bytes": 6737
+    },
+    {
+      "upstream": "video-ad-editor/motion/examples/one-take/project.json",
+      "path": "third_party/majed-video/motion/examples/one-take/project.json",
+      "sha256": "127a7e3b05c94eced6a47e43f2c5250ffffee1574d14f7e556d083bffba3d5cb",
+      "bytes": 543
+    },
+    {
+      "upstream": "video-ad-editor/motion/examples/one-take/scenes/s1.js",
+      "path": "third_party/majed-video/motion/examples/one-take/scenes/s1.js",
+      "sha256": "fe06493e98f0076bfb23e2bb6ccd6630dddf1680ae2ac209c0437b6e0c0689a6",
+      "bytes": 13519
+    },
+    {
+      "upstream": "video-ad-editor/references/any-environment.md",
+      "path": "third_party/majed-video/references/any-environment.md",
+      "sha256": "a4122bbe7bc7bfeea218f916baa586d34a9505abc13fdc49101835e66b1710c4",
+      "bytes": 5186
+    },
+    {
+      "upstream": "video-ad-editor/references/audio-enhance.md",
+      "path": "third_party/majed-video/references/audio-enhance.md",
+      "sha256": "6d23e300c774df3c295d95d0b7c9c06e76809eeff5493a13d9f223fc36248fac",
+      "bytes": 2649
+    },
+    {
+      "upstream": "video-ad-editor/references/backdrop.md",
+      "path": "third_party/majed-video/references/backdrop.md",
+      "sha256": "16e040e0b70f598ef2d23b63ba0338961ad5daaccb24875f3fd5c3dcbfb58d5b",
+      "bytes": 1388
+    },
+    {
+      "upstream": "video-ad-editor/references/beat-fx.md",
+      "path": "third_party/majed-video/references/beat-fx.md",
+      "sha256": "036dc302da972e86ef3316c4d7b864fad1ee142fe939d178880e5c3147638b49",
+      "bytes": 15855
+    },
+    {
+      "upstream": "video-ad-editor/references/capcut.md",
+      "path": "third_party/majed-video/references/capcut.md",
+      "sha256": "bb78726c6734e92cf234cd6d8f800acecb7384838fb365dfa77db4ff2283a5ef",
+      "bytes": 9133
+    },
+    {
+      "upstream": "video-ad-editor/references/collage.md",
+      "path": "third_party/majed-video/references/collage.md",
+      "sha256": "39b3397c7ec204dd4aa23d95286d8ddcecb5904efd628a22acb71b278348debd",
+      "bytes": 3821
+    },
+    {
+      "upstream": "video-ad-editor/references/cut-styles.md",
+      "path": "third_party/majed-video/references/cut-styles.md",
+      "sha256": "f8c190e555b4f4e4ecfbc79ee9ed2c2a59cac5ec863e749ea30bb022b9fddfa8",
+      "bytes": 14554
+    },
+    {
+      "upstream": "video-ad-editor/references/examples.md",
+      "path": "third_party/majed-video/references/examples.md",
+      "sha256": "5acc9ae7c9f1b4e08309ef98f81f9439094a4cbfaef18d4becf1e02785e027d8",
+      "bytes": 12919
+    },
+    {
+      "upstream": "video-ad-editor/references/explainer-and-pace.md",
+      "path": "third_party/majed-video/references/explainer-and-pace.md",
+      "sha256": "b23fa0ad4b147ba136c6e2e31c166414d8e60f519e135ce0b3174c43d5255ab9",
+      "bytes": 2074
+    },
+    {
+      "upstream": "video-ad-editor/references/find-shots.md",
+      "path": "third_party/majed-video/references/find-shots.md",
+      "sha256": "91024c851b80a2b1236d44452453c3dff36df6351a09a204db79b052c3c4315b",
+      "bytes": 2346
+    },
+    {
+      "upstream": "video-ad-editor/references/gen-scenes.md",
+      "path": "third_party/majed-video/references/gen-scenes.md",
+      "sha256": "7bb0bfcb83bf11b1a6c7430f10220a2cded07277fc484ef991f83bf34b0befce",
+      "bytes": 6129
+    },
+    {
+      "upstream": "video-ad-editor/references/landscape.md",
+      "path": "third_party/majed-video/references/landscape.md",
+      "sha256": "d0fe79cdc63d6f696f3e2d97a3c7bace1ae7f180e68c98712aac696d6b703f69",
+      "bytes": 7107
+    },
+    {
+      "upstream": "video-ad-editor/references/montage.md",
+      "path": "third_party/majed-video/references/montage.md",
+      "sha256": "0111f41169ca5b6d0403d5b970f026bbded13792c1de6c8f60b0f50661be9d1f",
+      "bytes": 5744
+    },
+    {
+      "upstream": "video-ad-editor/references/motion-kit.md",
+      "path": "third_party/majed-video/references/motion-kit.md",
+      "sha256": "669465f85cb02dea516a6fe0e61d7b2a1306d48388a7d159c76642c386d0a240",
+      "bytes": 9518
+    },
+    {
+      "upstream": "video-ad-editor/references/motion-mode.md",
+      "path": "third_party/majed-video/references/motion-mode.md",
+      "sha256": "0fc968f49f03a245163d2874e32f3a83289632709d4a489f3875b91bd293b949",
+      "bytes": 3284
+    },
+    {
+      "upstream": "video-ad-editor/references/motion-rules.md",
+      "path": "third_party/majed-video/references/motion-rules.md",
+      "sha256": "b364fa47e4eae57c41b3800dd019d47de6e435f663a7ecc9597a27bcf7c6bc97",
+      "bytes": 4614
+    },
+    {
+      "upstream": "video-ad-editor/references/moves.md",
+      "path": "third_party/majed-video/references/moves.md",
+      "sha256": "73ba779f90579312d0d1cd7060c942e7211dee9f34bb729aa4cc52eacdf547b1",
+      "bytes": 24539
+    },
+    {
+      "upstream": "video-ad-editor/references/onboarding.md",
+      "path": "third_party/majed-video/references/onboarding.md",
+      "sha256": "853c3e02e84574a87571fd0a6145c012ea5578e98661c89767b99807b60ee1ee",
+      "bytes": 15580
+    },
+    {
+      "upstream": "video-ad-editor/references/one-take.md",
+      "path": "third_party/majed-video/references/one-take.md",
+      "sha256": "bd69dc37e598fc8b2b201bce61efd68bc46f1e70ee0c7e04461be98848f28112",
+      "bytes": 7167
+    },
+    {
+      "upstream": "video-ad-editor/references/phone-cloud-playbook.md",
+      "path": "third_party/majed-video/references/phone-cloud-playbook.md",
+      "sha256": "228606c5de5ecafc310e7d939d28bd752238657f180c4a23e2bd9902fc2f707b",
+      "bytes": 27089
+    },
+    {
+      "upstream": "video-ad-editor/references/podcast-hook.md",
+      "path": "third_party/majed-video/references/podcast-hook.md",
+      "sha256": "e57e6cb5ad3ffd56e24784a1738c12ace55ec39748119ff494315b7edf2c65a8",
+      "bytes": 10265
+    },
+    {
+      "upstream": "video-ad-editor/references/podcast-upgrades.md",
+      "path": "third_party/majed-video/references/podcast-upgrades.md",
+      "sha256": "13c45ce31ad09bdcb6196caea7f4e76a76a610512c44dc3bc90fd1bc7e489359",
+      "bytes": 10066
+    },
+    {
+      "upstream": "video-ad-editor/references/podcast.md",
+      "path": "third_party/majed-video/references/podcast.md",
+      "sha256": "4c2f45ee4db7e77250a8b1c9cbacc4949527adbf52ffffe9ff4958f53d32e49f",
+      "bytes": 7526
+    },
+    {
+      "upstream": "video-ad-editor/references/remotion.md",
+      "path": "third_party/majed-video/references/remotion.md",
+      "sha256": "6fa496a787fde59d200bb342971ff4d728f359cb82ed78d930d43c0140416bea",
+      "bytes": 2133
+    },
+    {
+      "upstream": "video-ad-editor/references/review-page.md",
+      "path": "third_party/majed-video/references/review-page.md",
+      "sha256": "cdad08fb7bfca0f9f4e155ee8136f62f062d04d968559bdadc07065c480bb443",
+      "bytes": 4386
+    },
+    {
+      "upstream": "video-ad-editor/references/scenes.md",
+      "path": "third_party/majed-video/references/scenes.md",
+      "sha256": "b48764798b301c3dac2cd1ed362c8e95be21e7a312784cd580bb50bd7cc59520",
+      "bytes": 7358
+    },
+    {
+      "upstream": "video-ad-editor/references/screen-recording.md",
+      "path": "third_party/majed-video/references/screen-recording.md",
+      "sha256": "cca31919aaa53f6b817e35fb7586d61f788054e89d86cb2ed12a7def5b3702e7",
+      "bytes": 4571
+    },
+    {
+      "upstream": "video-ad-editor/references/script-map.md",
+      "path": "third_party/majed-video/references/script-map.md",
+      "sha256": "eed2a9892c912568cf9a8fc61137df2085c501efa1dcaaac4ec87f4d0df7b17f",
+      "bytes": 9367
+    },
+    {
+      "upstream": "video-ad-editor/references/start.md",
+      "path": "third_party/majed-video/references/start.md",
+      "sha256": "d3445c932d1f53255fea1bff52dbb99c539838a0efb1cf25943cb4c8f4fcb832",
+      "bytes": 9439
+    },
+    {
+      "upstream": "video-ad-editor/references/studio.md",
+      "path": "third_party/majed-video/references/studio.md",
+      "sha256": "6ce716109aa6c2c5f7cd7b4fc90c0de01502507ea0148403a018aa2819612b96",
+      "bytes": 2698
+    },
+    {
+      "upstream": "video-ad-editor/references/styles.md",
+      "path": "third_party/majed-video/references/styles.md",
+      "sha256": "391b9cb2727f7e3f30957246a9240bf78c302221f701aa2859e59b6590598cf2",
+      "bytes": 8096
+    },
+    {
+      "upstream": "video-ad-editor/references/talking-avatar.md",
+      "path": "third_party/majed-video/references/talking-avatar.md",
+      "sha256": "49b4080a83e358846dfa4b6fa1cc6b701a982d7bffa198176d435a87885b7c51",
+      "bytes": 5326
+    },
+    {
+      "upstream": "video-ad-editor/references/thumbnails.md",
+      "path": "third_party/majed-video/references/thumbnails.md",
+      "sha256": "719787d1af772625f208f1df412fe744d95cd0e9b0315829981c3f4cfa8c5734",
+      "bytes": 6550
+    },
+    {
+      "upstream": "video-ad-editor/references/web-app-explainer.md",
+      "path": "third_party/majed-video/references/web-app-explainer.md",
+      "sha256": "638966dd7eeb4d4def0bd81c4e5a4d320fe603108904cac498c4f66601a1e6ec",
+      "bytes": 8898
+    },
+    {
+      "upstream": "video-ad-editor/references/windows.md",
+      "path": "third_party/majed-video/references/windows.md",
+      "sha256": "aedcffee5c335fc9ba99030f7eec4ba58a554868f7edea0049cfb74f655c04c0",
+      "bytes": 1873
+    },
+    {
+      "upstream": "video-ad-editor/references/word-fx.md",
+      "path": "third_party/majed-video/references/word-fx.md",
+      "sha256": "ce7e7e5f9736eb7b2017f7659207e1e29d1260f90863f3768156c3d4806d6c8e",
+      "bytes": 5127
+    },
+    {
+      "upstream": "video-ad-editor/scripts/personmask.swift",
+      "path": "third_party/majed-video/macos/personmask.swift",
+      "sha256": "baea953c499e061976f64b10efbe1e8f399b37b31082a11810eb76216bdaeab2",
+      "bytes": 2617
+    },
+    {
+      "upstream": "video-ad-editor/scripts/facetrack.swift",
+      "path": "third_party/majed-video/macos/facetrack.swift",
+      "sha256": "e77f5fe2d11c29f041dc2e5d40261fb73656f93db14ff2ed83b0c6e8f8348577",
+      "bytes": 1907
+    },
+    {
+      "upstream": "video-ad-editor/scripts/handpose.swift",
+      "path": "third_party/majed-video/macos/handpose.swift",
+      "sha256": "30ec1cfb1062fddf73d7fffbf51530df3141e98f546af947ce9ead2cd213cd7c",
+      "bytes": 1475
+    },
+    {
+      "upstream": "video-ad-editor/scripts/hdr2sdr.swift",
+      "path": "third_party/majed-video/macos/hdr2sdr.swift",
+      "sha256": "cc5499222cb54677ea9a663883fa91fd995219e3e33662959962ee18b88a695f",
+      "bytes": 3744
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/AmiriQuran-Regular.ttf",
+      "path": "public/fonts/majed/AmiriQuran-Regular.ttf",
+      "sha256": "e2a47644762d16bdfb6d33e0d8db8c6ff30beae84150ef5a705316bbd829455c",
+      "bytes": 136920
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/ArefRuqaa-Bold.ttf",
+      "path": "public/fonts/majed/ArefRuqaa-Bold.ttf",
+      "sha256": "247071015b7eefd63f94d6e47949c5d10294ed31bd432f809ba9a219d93f91bb",
+      "bytes": 123852
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/ArefRuqaa-Regular.ttf",
+      "path": "public/fonts/majed/ArefRuqaa-Regular.ttf",
+      "sha256": "ceb786d83ba92f35e96efcd8623c2858d288e0c543c8761ba35b1020989464f9",
+      "bytes": 110696
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Cairo-VF.ttf",
+      "path": "public/fonts/majed/Cairo-VF.ttf",
+      "sha256": "667c987182391c91f4e57a2f455b1794fb5e3ee6ca4ef3383e86bb690fa9c964",
+      "bytes": 599548
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Inter-VF.ttf",
+      "path": "public/fonts/majed/Inter-VF.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "bytes": 876576
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Lalezar-Regular.ttf",
+      "path": "public/fonts/majed/Lalezar-Regular.ttf",
+      "sha256": "7b80807bc831f141de0f7dcf6816412bf0c548968d548c5156ca388733390ea9",
+      "bytes": 290016
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/NotoKufiArabic-VF.ttf",
+      "path": "public/fonts/majed/NotoKufiArabic-VF.ttf",
+      "sha256": "494f6b61469d7a02a2d63f0fc4930bb007388d8cfe551de5eb98354e100889f3",
+      "bytes": 434204
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/ReadexPro-VF.ttf",
+      "path": "public/fonts/majed/ReadexPro-VF.ttf",
+      "sha256": "268bba7e1e8f3b14d798b3fb0e40ebaa3fc39308c9ac0020e2faf6df181cc30e",
+      "bytes": 278544
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Tajawal-Black.ttf",
+      "path": "public/fonts/majed/Tajawal-Black.ttf",
+      "sha256": "da582a579d3200869535dc994d2349608a8582042f8776b3679b157015db287c",
+      "bytes": 59028
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Tajawal-Bold.ttf",
+      "path": "public/fonts/majed/Tajawal-Bold.ttf",
+      "sha256": "0342ab6b74b6bd1b4b5bf7beda45a9734a2b3147a31e8a3a45b6a3417a52d9d7",
+      "bytes": 59988
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/Tajawal-Regular.ttf",
+      "path": "public/fonts/majed/Tajawal-Regular.ttf",
+      "sha256": "6882892da3e03527d5db2bbab3b48bde6ef2e878a43f522d1a4eebda90010a19",
+      "bytes": 60364
+    },
+    {
+      "upstream": "video-ad-editor/motion/fonts/LICENSES.txt",
+      "path": "public/fonts/majed/LICENSES.txt",
+      "sha256": "642191ea3de523ae1bd42ea268a7525fa64adbb66d7c052527365645a2f6c342",
+      "bytes": 40117
+    }
+  ]
+}

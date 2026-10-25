@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "majed-riso",
+  "name": "Majed · riso",
+  "description": "حبرين فلورسنت متراكبين مزحزحين، ونقاط هافتون — طباعة يدوية (adapted from majedphotos/video-ad-editor style \"riso\", MIT; colours and fonts only, HASKA motion defaults).",
+  "extends": "haska-cyber",
+  "palette": {
+    "background": "#f4f0e8",
+    "surface": "#e8e4e0",
+    "primary": "#ff48b0",
+    "accent": "#00a9b5",
+    "text": "#2b2b6b",
+    "mutedText": "#717097"
+  },
+  "typography": {
+    "display": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 800
+    },
+    "body": {
+      "family": "IBM Plex Sans Arabic",
+      "fallbacks": [
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 500
+    },
+    "arabic": {
+      "family": "Lalezar",
+      "fallbacks": [
+        "IBM Plex Sans Arabic",
+        "DejaVu Sans",
+        "sans-serif"
+      ],
+      "weight": 700
+    }
+  },
+  "motion": {
+    "personality": "energetic"
+  },
+  "extensions": {
+    "majed-video": {
+      "upstreamStyle": "riso",
+      "families": [
+        "punch"
+      ],
+      "cues": [
+        "hook",
+        "title",
+        "fun"
+      ],
+      "blend": [
+        "paperCut",
+        "newsprint"
+      ],
+      "surface": "riso",
+      "card": "misreg",
+      "label": "misreg",
+      "post": {
+        "grain": 0.05,
+        "vignette": 0
+      },
+      "needsCut": true
+    }
+  }
+}
