@@ -74,7 +74,9 @@ export const whisperPath = (root = ROOT) => findTool('whisper-cli', {root, envVa
 export const pythonCommand = (root = ROOT) => {
   const override = process.env.HASKA_PYTHON || readLocalConfig(root).python;
   if (override) return [override];
-  const candidates = isWindows ? [['py', '-3'], ['python'], ['python3']] : [['python3'], ['python']];
+  // Prefer the PATH interpreter on Windows so actions/setup-python and project tooling resolve the same environment.
+  // Fall back to the Python launcher for normal desktop installations.
+  const candidates = isWindows ? [['python'], ['py', '-3'], ['python3']] : [['python3'], ['python']];
   for (const [command, ...prefix] of candidates) {
     const found = which(command);
     if (!found) continue;

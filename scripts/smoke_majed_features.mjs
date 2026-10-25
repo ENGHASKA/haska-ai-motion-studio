@@ -71,7 +71,8 @@ try {
     check(`${id} follows the cover rules`, Boolean(info) && info.issues.length === 0 && info.fits, info ? `title ${info.fontSize}px issues=${JSON.stringify(info.issues)}` : 'no result');
   }
   // Text behind subject: green screen with a red "subject" box in the middle; the matte tool makes the matte; the headline must be hidden behind the box.
-  const tbs = await still('TextBehindSubject', {src: '_smoke/green.mp4', matte: '_smoke/matte.mp4', text: 'HASKA', textStart: 0}, 12, 'tbs');
+  // A single H makes the centre probe deterministic across font metrics: its crossbar is white unless the red subject layer covers it.
+  const tbs = await still('TextBehindSubject', {src: '_smoke/green.mp4', matte: '_smoke/matte.mp4', text: 'H', textStart: 0}, 12, 'tbs');
   const probe = spawnSync(python, [...pyPrefix, '-I', '-c', 'import sys;from PIL import Image;im=Image.open(sys.argv[1]).convert("RGB");print(*im.getpixel((540,960)),*im.getpixel((540,300)))', tbs.output], {encoding: 'utf8'}).stdout.trim().split(' ').map(Number);
   const [cr, cg, cb] = probe;
   check('TextBehindSubject keeps the subject in front of the text', cr > 200 && cg < 60 && cb < 60, `centre pixel=${cr},${cg},${cb}`);
