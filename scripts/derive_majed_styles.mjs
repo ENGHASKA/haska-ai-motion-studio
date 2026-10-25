@@ -70,7 +70,7 @@ for (const profile of Object.values(profiles)) {
   const file = join(directory, `${profile.id}.json`);
   const text = `${JSON.stringify(profile, null, 2)}\n`;
   if (check) {
-    if (!existsSync(file) || readFileSync(file, 'utf8') !== text) stale++;
+    if (!existsSync(file) || readFileSync(file, 'utf8').replace(/\r\n/g, '\n') !== text) stale++;
   } else writeFileSync(file, text);
 }
 if (check) {

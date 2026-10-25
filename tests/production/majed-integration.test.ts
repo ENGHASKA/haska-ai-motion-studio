@@ -7,7 +7,7 @@ import {test} from 'node:test';
 import {BUILTIN_STYLE_PROFILES, createStyleRegistry} from '../../src/production/style-profile.ts';
 
 const ROOT = process.env.HASKA_PROJECT_ROOT ?? process.cwd();
-const read = (path: string) => readFileSync(join(ROOT, path), 'utf8');
+const read = (path: string) => readFileSync(join(ROOT, path), 'utf8').replace(/\r\n/g, '\n');
 const json = (path: string) => JSON.parse(read(path));
 const python = (args: string[]) => spawnSync(process.platform === 'win32' ? 'python' : 'python3', ['-I', ...args], {cwd: ROOT, encoding: 'utf8'});
 const walk = (dir: string, out: string[] = []): string[] => {

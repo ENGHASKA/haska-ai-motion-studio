@@ -53,7 +53,7 @@ def collect() -> list[tuple[str, bytes]]:
             findings.append(f"{rel}: unexpected binary file")
         entries.append((rel, body))
     required = {
-        "LICENSE", "README.md", "README.ar.md", "SECURITY.md", "THIRD_PARTY_NOTICES.md",
+        "LICENSE", "README.md", "README.ar.md", "SECURITY.md", "THIRD_PARTY_NOTICES.md", "requirements-media.txt",
         "docs/en/INSTALL.md", "docs/ar/INSTALL.md", "scripts/setup-linux.sh",
         "scripts/setup-windows.ps1", ".agents/skills/haska-video/SKILL.md",
     }

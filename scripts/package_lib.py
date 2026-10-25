@@ -9,7 +9,7 @@ from pathlib import Path
 # Only these top-level paths can ever enter the package (intersected with git-tracked files).
 ALLOW = (
     "CLAUDE.md", "AGENTS.md", "README.md", "README.ar.md", "LICENSE", "THIRD_PARTY_NOTICES.md",
-    "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md", "package.json", "package-lock.json", "tsconfig.json",
+    "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md", "package.json", "package-lock.json", "requirements-media.txt", "tsconfig.json",
     "tsconfig.production.json", "remotion.config.ts", ".gitignore", ".gitattributes", "run-studio.sh", "render-audio.sh",
     "render-sample.sh", "healthcheck.sh", "blender-studio.sh", "run-studio.ps1", "run-studio.cmd",
     "src/", "tests/", "scripts/", "config/", "docs/", "schemas/", ".github/",

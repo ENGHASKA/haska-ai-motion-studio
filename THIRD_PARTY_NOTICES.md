@@ -12,6 +12,8 @@ Preserve the bundled Majed and font license texts when redistributing. Fonts may
 
 Dependencies installed through `npm ci` retain their own terms. React, Three.js and many related packages use permissive licenses; TypeScript is Apache-2.0, postprocessing is zlib, and GSAP uses the GreenSock standard license.
 
+Optional Python media support installs the exact packages listed in `requirements-media.txt` from PyPI; they are not bundled in this repository or its source archives. NumPy uses BSD-3-Clause plus the licenses recorded in its distribution metadata, SciPy uses BSD-3-Clause plus its bundled notices, and Pillow uses MIT-CMU plus its bundled notices. Preserve the license metadata installed with those distributions.
+
 **Remotion is governed by the Remotion License, not HASKA's MIT license.** Free-use eligibility and company-license requirements depend on organization size and use case. Review <https://www.remotion.dev/docs/license> and the installed `node_modules/remotion/LICENSE.md`.
 
 FFmpeg, Blender, whisper.cpp, models, Chromium and Python tools are installed separately and are not bundled. FFmpeg terms depend on the selected build/codecs; Blender is GPL; whisper.cpp is MIT and model licenses vary.

@@ -40,7 +40,7 @@ if (-not (Test-Path '.claude\skills')) {
 if ($PythonDeps) {
   Write-Host '==> .venv with numpy, scipy, Pillow'
   if ($py -eq 'py') { py -3 -m venv .venv } else { python -m venv .venv }
-  & .\.venv\Scripts\python.exe -m pip install --quiet --disable-pip-version-check numpy scipy Pillow
+  & .\.venv\Scripts\python.exe -m pip install --quiet --disable-pip-version-check -r requirements-media.txt
 }
 
 Write-Host 'Transcription (whisper.cpp) is not installed automatically on Windows: download a Windows whisper-cli.exe release and a ggml model yourself, then set HASKA_WHISPER (see config\env.example).'

@@ -1,0 +1,4 @@
+# Optional local media-analysis dependencies. Keep exact versions for reproducible setup and CI.
+numpy==2.4.6
+scipy==1.17.1
+Pillow==12.3.0

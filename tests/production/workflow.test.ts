@@ -343,7 +343,7 @@ test('CLI end-to-end: new -> blocked render -> approval -> dry-run render -> edi
   const dryRun = cli(root, 'render', 'demo', '--dry-run', '--out', 'out/demo.mp4');
   assert.equal(dryRun.code, 0, dryRun.out);
   assert.match(dryRun.out, /APPROVAL OK: Approved v1/);
-  assert.match(dryRun.out, /remotion render src\/index\.ts ProductionVideo .*out\/demo\.mp4 --props=.*demo\.json --codec=h264 --audio-codec=aac --color-space=bt709/);
+  assert.match(dryRun.out.replaceAll('\\', '/'), /remotion render src\/index\.ts ProductionVideo .*out\/demo\.mp4 --props=.*demo\.json --codec=h264 --audio-codec=aac --color-space=bt709/);
   assert.match(dryRun.out, /dry run: nothing was rendered/);
   assert.ok(!existsSync(join(root, 'out', 'demo.mp4')), 'a dry run renders nothing');
   const props = readJsonFile(join(root, '.cache', 'production-props', 'demo.json')) as {graph: ShotGraph};

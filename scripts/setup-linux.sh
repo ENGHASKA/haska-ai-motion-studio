@@ -30,7 +30,7 @@ if [ ! -e .claude/skills ]; then mkdir -p .claude && ln -s ../.agents/skills .cl
 if [ "$PY_DEPS" = 1 ]; then
   echo "==> .venv with numpy, scipy, Pillow"
   python3 -m venv .venv
-  .venv/bin/python -m pip install --quiet --disable-pip-version-check numpy scipy Pillow
+  .venv/bin/python -m pip install --quiet --disable-pip-version-check -r requirements-media.txt
 fi
 
 if [ "$WHISPER" = 1 ]; then
